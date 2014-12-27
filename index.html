@@ -2,15 +2,81 @@
 ---
 <!doctype html>
 <html>
-	<head>
-		<script type="text/javascript" src="components/webcomponentsjs/webcomponents.js"></script>	
-		<link rel="import" href="components/paper-shadow/paper-shadow.html">
-	</head>
-	<body>
-	<paper-shadow class="card" z="5" animated="true">
-		<div style="width: 100px" onclick="this.setZ(1)">
-			test
-		</div>
-	</paper-shadow>
-	</body>
+    <head>
+        <script type="text/javascript" src="components/webcomponentsjs/webcomponents.js"></script>	
+        <link rel="import" href="components/paper-shadow/paper-shadow.html">
+        <style>
+            .fab {
+                display: inline-block;
+                box-sizing: border-box;
+                border-radius: 50%;
+                text-align: center;
+            }
+            #header {
+                text-align: center;
+                max-width: 800px; 
+                margin: 0 auto 30px ;
+            }
+            .header-item {
+                width: 80px;
+                height: 80px;
+                font-size: 15px;
+                padding-top: 30px;
+                margin-right: 10%;
+                margin-left: 10%;
+            }
+            .content-item {
+                display: none;
+                background-color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+    <div style="text-align: center"> [Under Construction] </div>
+    <!-- Holds the autobinding scope for Polymer -->
+        <template is="auto-binding"> 
+            <div id="header">
+                {% for section in site.data.sections %}
+                    <paper-shadow class="fab header-item" z="[[defaultZ]]" style="background-color: {{ section.color }}" on-tap="[[focus]]" animated layout center-center> 
+                       {{ section.name }} 
+                    </paper-shadow>
+                {% endfor %}
+            </div>
+            <div id="content">
+                {% for post in site.posts %}
+                    <paper-shadow class="content-item {{ post.category }}" z="2">
+                        {{ post.content }}
+                    </paper-shadow>
+                {% endfor %}
+            </div>
+        </template>
+        <script>
+            var body = document.querySelector('body');
+            var focused;
+            var scope = document.querySelector('template');
+            scope.defaultZ = 3;
+            scope.focus = function (e) {
+                if ( focused )
+                    unfocus(focused);
+    
+                var target = e.target;
+                focused = target;
+                target.setZ(0);
+                body.style.backgroundColor = target.style.backgroundColor;
+                setCategoryDisplay(target.innerHTML, "block");
+            }
+            function unfocus (section) {
+                body.style.backgroundColor = "#fff";
+                setCategoryDisplay(section.innerHTML, "none");
+                section.setZ(scope.defaultZ); 
+            }
+            function setCategoryDisplay (category, display) {
+                category = category.trim();
+                var posts = document.querySelectorAll('.' + category);
+                if (posts)
+                for ( var i = 0; i < posts.length ; ++i) 
+                    posts[i].style.display = display;
+            }
+        </script>
+    </body>
 </html>

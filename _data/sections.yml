@@ -1,0 +1,6 @@
+- name: About
+  color: '#0f0'
+- name: Portfolio
+  color: '#f00'
+- name: Blog
+  color: '#00f'
