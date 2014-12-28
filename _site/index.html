@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript" src="components/webcomponentsjs/webcomponents.js"></script>	
         <link rel="import" href="components/paper-shadow/paper-shadow.html">
         <style>
@@ -23,9 +24,20 @@
                 margin-right: 10%;
                 margin-left: 10%;
             }
+            #content {
+                text-align: center;
+            }
             .content-item {
                 display: none;
                 background-color: #fff;
+                margin: 20px;
+                padding: 20px;
+                box-sizing: border-box;
+                border-radius: 10%;
+                max-width: 45%;
+                transition: visibility 2s linear 2s;
+                -webkit-transition: visibility 2s linear 2s;
+                
             }
         </style>
     </head>
@@ -35,15 +47,15 @@
         <template is="auto-binding"> 
             <div id="header">
                 
-                    <paper-shadow class="fab header-item" z="[[defaultZ]]" style="background-color: #0f0" on-tap="[[focus]]" animated layout center-center> 
+                    <paper-shadow class="fab header-item" z="[[defaultZ]]" style="background-color: #165D0E" on-tap="[[focus]]" animated layout center-center> 
                        About 
                     </paper-shadow>
                 
-                    <paper-shadow class="fab header-item" z="[[defaultZ]]" style="background-color: #f00" on-tap="[[focus]]" animated layout center-center> 
+                    <paper-shadow class="fab header-item" z="[[defaultZ]]" style="background-color: #882d61" on-tap="[[focus]]" animated layout center-center> 
                        Portfolio 
                     </paper-shadow>
                 
-                    <paper-shadow class="fab header-item" z="[[defaultZ]]" style="background-color: #00f" on-tap="[[focus]]" animated layout center-center> 
+                    <paper-shadow class="fab header-item" z="[[defaultZ]]" style="background-color: #AA8239" on-tap="[[focus]]" animated layout center-center> 
                        Blog 
                     </paper-shadow>
                 
@@ -91,19 +103,30 @@
                 focused = target;
                 target.setZ(0);
                 body.style.backgroundColor = target.style.backgroundColor;
-                setCategoryDisplay(target.innerHTML, "block");
+                showCategory(target.innerHTML);
             }
             function unfocus (section) {
                 body.style.backgroundColor = "#fff";
-                setCategoryDisplay(section.innerHTML, "none");
+                hideCategory(section.innerHTML);
                 section.setZ(scope.defaultZ); 
             }
-            function setCategoryDisplay (category, display) {
+            function showCategory(category) {
                 category = category.trim();
                 var posts = document.querySelectorAll('.' + category);
                 if (posts)
-                for ( var i = 0; i < posts.length ; ++i) 
-                    posts[i].style.display = display;
+                for ( var i = 0; i < posts.length ; ++i) { 
+                    posts[i].style.display = "inline-block";
+                    posts[i].style.visibility = "visible";
+                }
+            }
+            function hideCategory(category) {
+                category = category.trim();
+                var posts = document.querySelectorAll('.' + category);
+                if (posts)
+                for ( var i = 0; i < posts.length ; ++i) { 
+                    posts[i].style.display = "none";
+                    posts[i].style.visibility = "hidden";
+                }
             }
         </script>
     </body>

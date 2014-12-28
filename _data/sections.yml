@@ -1,6 +1,6 @@
 - name: About
-  color: '#0f0'
+  color: '#165D0E'
 - name: Portfolio
-  color: '#f00'
+  color: '#882d61'
 - name: Blog
-  color: '#00f'
+  color: '#AA8239'
