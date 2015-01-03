@@ -12,19 +12,29 @@
                 box-sizing: border-box;
                 border-radius: 50%;
                 text-align: center;
+                color: white;
             }
             #header {
                 text-align: center;
                 max-width: 800px; 
-                margin: 0 auto 30px ;
+                margin: 0 auto;
             }
-            .header-item {
+            #title { 
+            }
+            #profile-pic {
+                vertical-align: middle;
+                width: 200px;
+            }  
+            #menu {
+                margin-top: 30px;
+            }
+            .menu-item {
                 width: 80px;
                 height: 80px;
                 font-size: 15px;
                 padding-top: 30px;
-                margin-right: 10%;
-                margin-left: 10%;
+                margin-right: 20px;
+                margin-left: 20px;
             }
             #content {
                 text-align: center;
@@ -54,16 +64,26 @@
     <!-- Holds the autobinding scope for Polymer -->
         <template is="auto-binding"> 
             <div id="header">
+                <div id="title">
+                    <h1>
+                        Mitchell 
+                        <paper-shadow class="fab"><img src="img/profile.jpg" id="profile-pic" class="fab"></img></paper-shadow> 
+                        Gordon
+                    </h1>
+                </div>
+                <div id="menu">
                 {% for section in site.data.sections %}
-                    <paper-shadow class="fab header-item" z="[[defaultZ]]" style="background-color: {{ section.color }}" on-tap="[[focus]]" animated layout center-center> 
+                    <paper-shadow class="fab menu-item" z="[[defaultZ]]" style="background-color: {{ section.color }}" on-tap="[[focus]]" animated layout center-center> 
                        {{ section.name }} 
                     </paper-shadow>
                 {% endfor %}
+                </div>
             </div>
             <div id="content">
                 {% for post in site.posts %}
                     <paper-shadow class="content-item {{ post.category }}" z="2">
-                        {{ post.content }}
+                        <h3>{{ post.title }} </h3>
+                        <span style="text-align: left;">{{ post.content }} </span>
                     </paper-shadow>
                 {% endfor %}
             </div>

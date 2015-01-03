@@ -1,7 +1,5 @@
 ---
-title: CSS Pixels
+title: "CSS Pixels: Why Hardcoding Widths is Okay"
 category: Blog
 ---
-CSS Pixels: The Real Story
-
 I just found out that pixels are actually angular widths and it blew my mind.
