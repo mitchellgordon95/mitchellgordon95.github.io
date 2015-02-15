@@ -2,5 +2,5 @@
   color: '#165D0E'
 - name: Portfolio
   color: '#882d61'
-- name: Blog
-  color: '#AA8239'
+#- name: Blog
+#  color: '#AA8239'

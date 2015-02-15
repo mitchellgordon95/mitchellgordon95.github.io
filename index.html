@@ -4,8 +4,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="components/webcomponentsjs/webcomponents.js"></script>	
-        <link rel="import" href="components/paper-shadow/paper-shadow.html">
+        <meta charset="utf-8">
         <style>
             .fab {
                 display: inline-block;
@@ -14,12 +13,16 @@
                 text-align: center;
                 color: white;
             }
+            .shadow {
+                box-shadow: 0px 5px 5px black; 
+            }
             #header {
                 text-align: center;
                 max-width: 800px; 
                 margin: 0 auto;
             }
             #title { 
+                color: white;
             }
             #profile-pic {
                 vertical-align: middle;
@@ -51,62 +54,83 @@
                 border-radius: 10%;
                 transition: visibility 2s linear 2s;
                 -webkit-transition: visibility 2s linear 2s;
+                box-shadow: 5px 5px 5px black; 
             }
             @media (min-width: 800px) {
                 .content-item {
                     max-width: 45%;
                 }
             }
+            @media (max-width: 500px) {
+                #name {
+                   font-size: 1em;
+                }
+                #profile-pic {
+                    vertical-align: middle;
+                    width: 100px;
+                }
+            }
         </style>
     </head>
     <body>
-    <div style="text-align: center"> [Under Construction] </div>
-    <!-- Holds the autobinding scope for Polymer -->
-        <template is="auto-binding"> 
-            <div id="header">
-                <div id="title">
-                    <h1>
-                        Mitchell 
-                        <paper-shadow class="fab"><img src="img/profile.jpg" id="profile-pic" class="fab"></img></paper-shadow> 
-                        Gordon
-                    </h1>
-                </div>
-                <div id="menu">
-                {% for section in site.data.sections %}
-                    <paper-shadow class="fab menu-item" z="[[defaultZ]]" style="background-color: {{ section.color }}" on-tap="[[focus]]" animated layout center-center> 
-                       {{ section.name }} 
-                    </paper-shadow>
-                {% endfor %}
-                </div>
+        <div id="header">
+            <div id="title">
+                <h1 id="name">
+                    Mitchell 
+                    <div class="fab shadow"><img src="img/profile.jpg" id="profile-pic" class="fab"></img></div> 
+                    Gordon
+                </h1>
             </div>
-            <div id="content">
-                {% for post in site.posts %}
-                    <paper-shadow class="content-item {{ post.category }}" z="2">
-                        <h3>{{ post.title }} </h3>
-                        <span style="text-align: left;">{{ post.content }} </span>
-                    </paper-shadow>
-                {% endfor %}
+            <div id="menu">
+            {% for section in site.data.sections %}
+                <div id="{{ section.name }}" class="fab menu-item shadow" style="background-color: {{ section.color }}"> 
+                   {{ section.name }} 
+                </div>
+            {% endfor %}
             </div>
-        </template>
+        </div>
+        <div id="content">
+            {% for post in site.posts %}
+                <div class="content-item {{ post.category }}" >
+                    <h3>{{ post.title }} </h3>
+                    <span style="text-align: left;">{{ post.content }} </span>
+                </div>
+            {% endfor %}
+        </div>
         <script>
             var body = document.querySelector('body');
             var focused;
-            var scope = document.querySelector('template');
-            scope.defaultZ = 3;
-            scope.focus = function (e) {
+            {% for section in site.data.sections %}
+                document.getElementById("{{ section.name }}").addEventListener("click", focus);
+            {% endfor %}
+            
+            // Sets the shadow for an element.
+            function setZ(target, z) {
+                if (z == 0)
+                    target.style.boxShadow = "";
+                else if (z == 1)
+                    target.style.boxShadow = "0px 1px 5px black";
+                else if (z == 2)
+                    target.style.boxShadow = "0px 3px 5px black";
+                else if (z == 3)
+                    target.style.boxShadow = "0px 5px 5px black";
+            }
+
+            // Focuses on a section. Takes an event as a parameter.
+            function focus (e) {
+                var target = e.target;
+                body.style.backgroundColor = target.style.backgroundColor;
+
                 if ( focused )
                     unfocus(focused);
-    
-                var target = e.target;
+
                 focused = target;
-                target.setZ(1);
-                body.style.backgroundColor = target.style.backgroundColor;
+                setZ(target, 1); 
                 showCategory(target.innerHTML);
             }
-            function unfocus (section) {
-                body.style.backgroundColor = "#fff";
-                hideCategory(section.innerHTML);
-                section.setZ(scope.defaultZ); 
+            function unfocus (target) {
+                hideCategory(target.innerHTML);
+                setZ(target, 3); 
             }
             function showCategory(category) {
                 category = category.trim();
@@ -126,6 +150,12 @@
                     posts[i].style.visibility = "hidden";
                 }
             }
+
+            // Start with the About section
+            window.addEventListener("load", function () {
+                focus({target: document.getElementById("About")});
+            });
+            
         </script>
     </body>
 </html>
