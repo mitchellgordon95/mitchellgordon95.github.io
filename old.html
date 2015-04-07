@@ -5,92 +5,33 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div id="header">
-            <div id="title">
-                <h1 id="name">
-                    Mitchell 
-                    <div class="fab shadow"><img src="img/profile.jpg" id="profile-pic" class="fab"></img></div> 
-                    Gordon
-                </h1>
-            </div>
-            <div id="menu">
-            {% for section in site.data.sections %}
-                <div id="{{ section.name }}" class="fab menu-item shadow" style="background-color: {{ section.color }}"> 
-                   {{ section.name }} 
-                </div>
-            {% endfor %}
-            </div>
+    	<div class="container">
+        <div id="title" class="jumbotron">
+        	<h1>Mitchell Gordon</h1>
         </div>
-        <div id="content">
+        <ul id="menu">
+        {% for section in site.data.sections %}
+            <li id="{{ section.name }}">
+               {{ section.name }} 
+            </li>
+        {% endfor %}
+        </ul>
+        <div id="content" class="row">
             {% for post in site.posts %}
-                <div class="content-item {{ post.category }}" >
+                <div class="content-item {{ post.category }} col-md-6" style="display: none" >
                     <h3>{{ post.title }} </h3>
                     <span style="text-align: left;">{{ post.content }} </span>
                 </div>
             {% endfor %}
         </div>
-        <script>
-            var body = document.querySelector('body');
-            var focused;
-            {% for section in site.data.sections %}
-                document.getElementById("{{ section.name }}").addEventListener("click", focus);
-            {% endfor %}
-            
-            // Sets the shadow for an element.
-            function setZ(target, z) {
-                if (z == 0)
-                    target.style.boxShadow = "";
-                else if (z == 1)
-                    target.style.boxShadow = "0px 1px 5px black";
-                else if (z == 2)
-                    target.style.boxShadow = "0px 3px 5px black";
-                else if (z == 3)
-                    target.style.boxShadow = "0px 5px 5px black";
-            }
-
-            // Focuses on a section. Takes an event as a parameter.
-            function focus (e) {
-                var target = e.target;
-                body.style.backgroundColor = target.style.backgroundColor;
-
-                if ( focused )
-                    unfocus(focused);
-
-                focused = target;
-                setZ(target, 1); 
-                showCategory(target.innerHTML);
-            }
-            function unfocus (target) {
-                hideCategory(target.innerHTML);
-                setZ(target, 3); 
-            }
-            function showCategory(category) {
-                category = category.trim();
-                var posts = document.querySelectorAll('.' + category);
-                if (posts)
-                for ( var i = 0; i < posts.length ; ++i) { 
-                    posts[i].style.display = "inline-block";
-                    posts[i].style.visibility = "visible";
-                }
-            }
-            function hideCategory(category) {
-                category = category.trim();
-                var posts = document.querySelectorAll('.' + category);
-                if (posts)
-                for ( var i = 0; i < posts.length ; ++i) { 
-                    posts[i].style.display = "none";
-                    posts[i].style.visibility = "hidden";
-                }
-            }
-
-            // Start with the About section
-            window.addEventListener("load", function () {
-                focus({target: document.getElementById("About")});
-            });
-            
-        </script>
+        </div>
+        <script src="js/menu.js"></script>
     </body>
 </html>
