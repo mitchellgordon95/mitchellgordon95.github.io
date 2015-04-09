@@ -1,0 +1,15 @@
+body {
+	background-color: #EBFFF5;
+}
+div {
+  width: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  padding: 20px;
+  resize: both;
+  overflow: auto;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
