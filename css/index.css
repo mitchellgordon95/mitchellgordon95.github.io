@@ -11,6 +11,12 @@ div {
   text-align: center;
   font-family: 'Press Start 2P', cursive;
 }
+a {
+	color: black;
+}
+.octicon {
+	font-size: 64px;
+}
 @media (min-width: 320px) {
 	div {
 		width: 100%;
