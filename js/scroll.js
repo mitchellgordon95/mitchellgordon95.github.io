@@ -1,8 +1,13 @@
 var content = $("#content");
 var contentHeight = parseFloat(content.height());
+var triangleHint = $("#triangle-hint");
+var hintHidden = false;
 
 $(document).ready(function(){
     $(window).mousewheel( function(evt){
+    	if (!hintHidden)
+    		triangleHint.hide();
+    	
     	content.css("top", "+=" + evt.deltaY * evt.deltaFactor);
     	
     	// The top of the content
