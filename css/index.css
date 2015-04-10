@@ -1,7 +1,8 @@
 body {
 	background-color: #EBFFF5;
+	overflow: hidden;
 }
-div {
+#content {
   width: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
