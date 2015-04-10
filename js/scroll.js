@@ -8,15 +8,16 @@ $(document).ready(function(){
     	// The top of the content
     	var top = parseFloat(content.css("top"));
     	var windowHeight = parseFloat($(window).height());
+    	var buffer = windowHeight * 3;
     	
     	// Check if the content is past the bottom of the screen.
     	var pastBottom = top - windowHeight;
-    	if ( pastBottom > 0)
-    		content.css("top", -contentHeight + pastBottom + "px");
+    	if ( pastBottom > buffer)
+    		content.css("top", -contentHeight + (pastBottom - buffer) + "px");
     	
     	// Check if the content is above the top of the screen.
-    	if (-top > contentHeight)
-    		content.css("top", windowHeight + top + contentHeight + "px");
+    	if (-top - buffer > contentHeight)
+    		content.css("top", windowHeight + (top + buffer) + contentHeight + "px");
     		
     	
     });
