@@ -4,6 +4,7 @@ body {
 }
 #content {
   width: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   position: absolute;
   top: 40%;
@@ -25,17 +26,40 @@ a {
 	position: absolute;
 	top: 100%;
 	left:50%;
-	transform: translate(-50%, -100%);
+	
+	-webkit-transform: translate(-50%, -100%);
+  	transform: translate(-50%, -100%);
   	
   	-webkit-animation: pulsate 2s ease-out;
   	-webkit-animation-iteration-count: infinite;
-  	-webkit-animation-delay: 2s;
-    opacity: 0.0;
+  	-webkit-animation-delay: 2s;  	
+  	animation: pulsate 2s ease-out;
+  	animation-iteration-count: infinite;
+  	animation-delay: 2s;
+  	
+  	opacity: 0.0;
 }
+
 @-webkit-keyframes pulsate {
 	0% {-webkit-transform: opacity: 0.0}
     50% {opacity: 1.0;}
     100% {-webkit-transform: opacity: 0.0;}
+}
+@keyframes pulsate {
+	0% {transform: opacity: 0.0}
+    50% {opacity: 1.0;}
+    100% {transform: opacity: 0.0;}
+}
+
+@-webkit-keyframes spin {
+	0% {-webkit-transform: rotate(0deg)}
+	50% {-webkit-transform: rotate(180deg)}
+    100% {-webkit-transform: rotate(360deg)}
+}
+@keyframes spin {
+	0% {transform: rotate(0deg)}
+	50% {transform: rotate(180deg)}
+    100% {transform: rotate(360deg)}
 }
 
 @media (min-width: 320px) {
