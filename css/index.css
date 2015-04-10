@@ -17,6 +17,9 @@ body {
 	#content {
 		width: 100%;
 	}
+	#triangle-hint {
+		display: none;
+	}
 }
 h1, h3 {
 	margin:0;
