@@ -7,7 +7,6 @@ var scrollCount = 0;
 
 // Scrolling can also be done with the arrow keys
 $(document).keydown( function(evt) {
-	console.log(evt.which);
 	if (evt.which == 38)
 		handleScroll ({deltaY: 40, deltaFactor: 1});
 	else if (evt.which == 40)
