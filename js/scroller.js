@@ -59,8 +59,8 @@ function doFunThings(count) {
 		content.css("animation-iteration-count", "infinite");
 	}
 	else if (count == 15) {
-		$("#content h1").text("Congrats! You win!");
-		$("#content h3").text("for now...");
+		$("#title").text("Congrats! You win!");
+		$("#tagline").text("for now...");
 	}
 	else {
 		resetContent();
@@ -68,8 +68,8 @@ function doFunThings(count) {
 }
 
 function resetContent () {
-	$("#content h1").text("Mitchell Gordon");
-    $("#content h3").text("Vanderbilt CS 2016");
+	$("#title").text("Mitchell Gordon");
+    $("#tagline").text("Vanderbilt CS 2016");
     allContentElms.css("color", "#000");
     content.css("-webkit-animation",  "");
     content.css("-webkit-animation-iteration-count", "");

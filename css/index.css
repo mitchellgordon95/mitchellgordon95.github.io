@@ -3,7 +3,7 @@ body {
 	overflow: hidden;
 }
 #content {
-  width: 50%;
+  width: 100%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   position: absolute;
@@ -13,9 +13,29 @@ body {
   text-align: center;
   font-family: 'Press Start 2P', cursive;
 }
-@media (max-width: 450px) {
-	#content {
-		width: 100%;
+#about-arrow {
+	position: absolute;
+	top: 40%;
+	left: 5px;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+#portfolio-arrow {
+	position: absolute;
+	top: 40%;
+	left: 100%;
+	-webkit-transform: translate(-101%, -50%);
+	transform: translate(-101%, -50%);
+}
+
+@media (max-width: 900px) {
+	#about-arrow, #portfolio-arrow {
+		position: static;
+		-webkit-transform: none;
+		transform: none;
+	}
+	#about-arrow {
+		margin-top: 10px;
 	}
 	#triangle-hint {
 		display: none;
@@ -60,9 +80,9 @@ a {
 }
 
 @-webkit-keyframes spin {
-	0% {-webkit-transform: rotate(0deg)}
-	50% {-webkit-transform: rotate(180deg)}
-    100% {-webkit-transform: rotate(360deg)}
+	0% {-webkit-transform: translate(-50%, -50%) scale(0.5, 0.5) rotate(0deg)}
+	50% {-webkit-transform: translate(-50%, -50%) scale(0.5, 0.5) rotate(180deg)}
+    100% {-webkit-transform: translate(-50%, -50%) scale(0.5, 0.5) rotate(360deg)}
 }
 @keyframes spin {
 	0% {transform: rotate(0deg)}
