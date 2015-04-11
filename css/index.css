@@ -2,6 +2,7 @@ body {
 	background-color: #EBFFF5;
 	overflow: hidden;
 }
+
 #content {
     width: 100%;
     text-align: center;
@@ -15,8 +16,10 @@ body {
     left: 50%;
 }
 #about-section, #portfolio-section {
+	text-align: left;
 	left: -150%;
 }
+
 #menu-left {
 	position: absolute;
 	top: 40%;
@@ -32,7 +35,22 @@ body {
 	transform: translate(-101%, -50%);
 }
 
+#prof-pics{
+	text-align: center;
+	height: 400px; 
+}
+#prof-pics img {
+	height: 100%;
+}
+#about-section h3 {
+	margin-top: 30px;
+}
+
+/** If we're below a certain width, just make everything on the page static. */
 @media (max-width: 900px) {
+	body {
+		overflow: auto;
+	}
 	#menu-left, #menu-right, #main-section, #about-section, #portfolio-section {
 		position: static;
 		-webkit-transform: none;
@@ -41,10 +59,24 @@ body {
 	#menu-left {
 		margin-top: 20px;
 	}
+	#prof-pics {
+		height: initial;
+	}
+	#prof-pics img {
+		height: initial;
+		width: 90%;
+	}
 	#triangle-hint, #about-section, #portfolio-section {
 		display: none;
 	}
 }
+
+/** Use more legible text for the about and portfolio paragraphs **/
+p {
+	font-family: Lato;
+}
+
+/** Style for the main section */
 h1, h3 {
 	margin:0;
 }
@@ -54,6 +86,8 @@ a {
 .octicon {
 	font-size: 64px;
 }
+
+/** The little pulsing triangle on the bottom of the main screen that hints at the infinite scroller*/
 #triangle-hint {
 	position: absolute;
 	top: 100%;
@@ -72,6 +106,8 @@ a {
   	opacity: 0.0;
 }
 
+
+/** Animations */
 @-webkit-keyframes slide-out-right {
 	0% {left: 50%; -webkit-transform: -webkit-translate(-50%, -50%)}
 	100% {left: 150%; -webkit-transform: -webkit-translate(-50%, -50%);}
@@ -83,11 +119,11 @@ a {
 
 @-webkit-keyframes slide-out-left {
 	0% {left: 50%; -webkit-transform: -webkit-translate(-50%, -50%)}
-	100% {left: -50%; -webkit-transform: -webkit-translate(-50%, -50%);}
+	100% {left: -100%; -webkit-transform: -webkit-translate(-50%, -50%);}
 }
 @keyframes slide-out-left {
 	0% {left: 50%; transform: translate(-50%, -50%)}
-	100% {left: -50%; transform: translate(-50%, -50%);}
+	100% {left: -100%; transform: translate(-50%, -50%);}
 }
 
 @-webkit-keyframes slide-in-left {
@@ -100,11 +136,11 @@ a {
 }
 
 @-webkit-keyframes slide-in-right {
-	0% {left: -50%; -webkit-transform: -webkit-translate(-50%, -50%)}
+	0% {left: -100%; -webkit-transform: -webkit-translate(-50%, -50%)}
 	100% {left: 50%; -webkit-transform: -webkit-translate(-50%, -50%);}
 }
 @keyframes slide-in-right {
-	0% {left: -50%; transform: translate(-50%, -50%)}
+	0% {left: -100%; transform: translate(-50%, -50%)}
 	100% {left: 50%; transform: translate(-50%, -50%);}
 }
 
@@ -120,9 +156,9 @@ a {
 }
 
 @-webkit-keyframes spin {
-	0% {-webkit-transform: translate(-50%, -50%) scale(0.5, 0.5) rotate(0deg)}
-	50% {-webkit-transform: translate(-50%, -50%) scale(0.5, 0.5) rotate(180deg)}
-    100% {-webkit-transform: translate(-50%, -50%) scale(0.5, 0.5) rotate(360deg)}
+	0% {-webkit-transform: translate(-50%, -50%) rotate(0deg)}
+	50% {-webkit-transform: translate(-50%, -50%) rotate(180deg)}
+    100% {-webkit-transform: translate(-50%, -50%) rotate(360deg)}
 }
 @keyframes spin {
 	0% {transform: rotate(0deg)}

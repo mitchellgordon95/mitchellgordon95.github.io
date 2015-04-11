@@ -7,6 +7,15 @@ var leftLabel = $("#menu-left h3");
 var menuRight = $("#menu-right");
 var rightLabel = $("#menu-right h3");
 
+// Left and right arrows trigger menu's.
+$(document).keydown( function(evt) {
+	if (evt.which == 37)
+		menuLeft.trigger("click");
+	else if (evt.which == 39)
+		menuRight.trigger("click");	
+});
+
+
 menuLeft.click(function () {
 	if (currentSection === "main") {
 

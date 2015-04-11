@@ -9,12 +9,14 @@ var scrollerDisabled = false;
 function disableScroller() {
 	scrollerDisabled = true;
 	resetContent();
+	$("body").css("overflow", "");
 	content.css("top", "40%");
 	triangleHint.hide();
 	hintHidden = true;
 }
 
 function enableScroller() {
+	$("body").css("overflow", "hidden");
 	scrollerDisabled = false;
 	triangleHint.show();
 	hintHidden = false;
@@ -71,10 +73,11 @@ function doFunThings(count) {
 	else if ( count == 7 )
 		content.css("color", "blue");
 	else if ( count == 13 ) {
-		content.css("-webkit-animation",  "spin 250ms");
-		content.css("-webkit-animation-iteration-count", "infinite");
-		content.css("animation",  "spin 250ms");
-		content.css("animation-iteration-count", "infinite");
+		var sections = $("#content div")
+		sections.css("-webkit-animation",  "spin 250ms");
+		sections.css("-webkit-animation-iteration-count", "infinite");
+		sections.css("animation",  "spin 250ms");
+		sections.css("animation-iteration-count", "infinite");
 	}
 	else if (count == 15) {
 		$("#title").text("Congrats! You win!");

@@ -29,15 +29,28 @@
 	        	<span class="octicon octicon-arrow-right"></span>
 	        </div>
 	    	<div id="about-section">
-	    			Some pictures of me
-	    			<p>Some text about me.</p>
+	    		<div id="prof-pics">
+	               <img src="img/just-me.jpg" />
+	               <img src="img/holi.jpg" />
+	               <img src="img/professional.jpg" />
+	               <img src="img/vandyhacks-talk.jpg" />
+	               <img src="img/vandyhacks-team.jpg" />
+				</div>
+				<h3>About Me</h3>
+	    		<p>Some random text about me. A;lkdjf a;dlkfj ad;lkfj da;lkfj a;dlkfj dsalkfj;sadkfjdslkfj ;dlkfj ;salkdjf a;lkdsjf ;dsalkjfad;lkfj
+	    		a;dskjf ;lkdsajf ;alkdjf ;aldskjf lkdsajf;adslkjf;adskfj ;dsajf;dsalkf ;lkdsfj ;alkdjf ;dsalkjf a;dslkjf;dsalkjfads;kf jds;flkj saf</p>
 	    	</div>
 	    	<div id="portfolio-section">
-				<p>Some stuff I've done</p>
+	    		{% for post in site.posts %}
+	    		<h3>{{ post.title }}</h3>
+	    		<p>{{ post.content }}</p>
+	    		{% endfor %}
 	    	</div>
         </div>
 		<span class="octicon octicon-triangle-down" id="triangle-hint"></span>
+		
         <script src="js/scroller.js"></script>
         <script src="js/sections.js"></script>
+        <script src="js/slider.js"></script>
     </body>
 </html>
