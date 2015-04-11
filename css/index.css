@@ -15,7 +15,7 @@ body {
     left: 50%;
 }
 #about-section, #portfolio-section {
-	display: none;
+	left: -150%;
 }
 #menu-left {
 	position: absolute;
@@ -41,7 +41,7 @@ body {
 	#menu-left {
 		margin-top: 20px;
 	}
-	#triangle-hint {
+	#triangle-hint, #about-section, #portfolio-section {
 		display: none;
 	}
 }
