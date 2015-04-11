@@ -3,24 +3,28 @@ body {
 	overflow: hidden;
 }
 #content {
-  width: 100%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  resize: both;
-  text-align: center;
-  font-family: 'Press Start 2P', cursive;
+    width: 100%;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
 }
-#about-arrow {
+#main-section, #about-section, #portfolio-section {
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+#about-section, #portfolio-section {
+	display: none;
+}
+#menu-left {
 	position: absolute;
 	top: 40%;
 	left: 5px;
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
 }
-#portfolio-arrow {
+#menu-right {
 	position: absolute;
 	top: 40%;
 	left: 100%;
@@ -29,13 +33,13 @@ body {
 }
 
 @media (max-width: 900px) {
-	#about-arrow, #portfolio-arrow {
+	#menu-left, #menu-right, #main-section, #about-section, #portfolio-section {
 		position: static;
 		-webkit-transform: none;
 		transform: none;
 	}
-	#about-arrow {
-		margin-top: 10px;
+	#menu-left {
+		margin-top: 20px;
 	}
 	#triangle-hint {
 		display: none;
@@ -66,6 +70,42 @@ a {
   	animation-delay: 2s;
   	
   	opacity: 0.0;
+}
+
+@-webkit-keyframes slide-out-right {
+	0% {left: 50%; -webkit-transform: -webkit-translate(-50%, -50%)}
+	100% {left: 150%; -webkit-transform: -webkit-translate(-50%, -50%);}
+}
+@keyframes slide-out-right {
+	0% {left: 50%; transform: translate(-50%, -50%)}
+	100% {left: 150%; transform: translate(-50%, -50%);}
+}
+
+@-webkit-keyframes slide-out-left {
+	0% {left: 50%; -webkit-transform: -webkit-translate(-50%, -50%)}
+	100% {left: -50%; -webkit-transform: -webkit-translate(-50%, -50%);}
+}
+@keyframes slide-out-left {
+	0% {left: 50%; transform: translate(-50%, -50%)}
+	100% {left: -50%; transform: translate(-50%, -50%);}
+}
+
+@-webkit-keyframes slide-in-left {
+	0% {left: 150%; -webkit-transform: -webkit-translate(-50%, -50%)}
+	100% {left: 50%; -webkit-transform: -webkit-translate(-50%, -50%);}
+}
+@keyframes slide-in-left {
+	0% {left: 150%; transform: translate(-50%, -50%)}
+	100% {left: 50%; transform: translate(-50%, -50%);}
+}
+
+@-webkit-keyframes slide-in-right {
+	0% {left: -50%; -webkit-transform: -webkit-translate(-50%, -50%)}
+	100% {left: 50%; -webkit-transform: -webkit-translate(-50%, -50%);}
+}
+@keyframes slide-in-right {
+	0% {left: -50%; transform: translate(-50%, -50%)}
+	100% {left: 50%; transform: translate(-50%, -50%);}
 }
 
 @-webkit-keyframes pulsate {
