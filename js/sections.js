@@ -9,6 +9,8 @@ var rightLabel = $("#menu-right h3");
 
 menuLeft.click(function () {
 	if (currentSection === "main") {
+
+		disableScroller();
 		
 		menuLeft.hide();
 		menuRight.hide();
@@ -20,6 +22,10 @@ menuLeft.click(function () {
 			menuRight.show();
 		}
 		else {
+			mainSection.show();
+			portfolioSection.show();
+			aboutSection.show();
+			
 			mainSection.css("-webkit-animation", "slide-out-right 1s ease-in-out forwards");
 			mainSection.css("animation", "slide-out-right 1s ease-in-out forwards");
 			
@@ -31,7 +37,6 @@ menuLeft.click(function () {
 		
 		currentSection = "about";
 		
-		disableScroller();
 	}
 	if(currentSection === "portfolio") {
 		menuLeft.hide();
@@ -46,6 +51,10 @@ menuLeft.click(function () {
 			menuLeft.show();
 		}
 		else {
+			mainSection.show();
+			portfolioSection.show();
+			aboutSection.show();
+			
 			portfolioSection.css("-webkit-animation", "slide-out-right 1s ease-in-out forwards");
 			portfolioSection.css("animation", "slide-out-right 1s ease-in-out forwards");
 			
@@ -63,6 +72,9 @@ menuLeft.click(function () {
 
 menuRight.click(function () {
 	if (currentSection === "main") {
+
+		disableScroller();
+		
 		menuLeft.hide();
 		menuRight.hide();
 		leftLabel.text("Home");
@@ -73,6 +85,10 @@ menuRight.click(function () {
 			menuLeft.show();
 		}
 		else {
+			mainSection.show();
+			portfolioSection.show();
+			aboutSection.show();
+			
 			mainSection.css("-webkit-animation", "slide-out-left 1s ease-in-out forwards");
 			mainSection.css("animation", "slide-out-left 1s ease-in-out forwards");
 			
@@ -83,8 +99,6 @@ menuRight.click(function () {
 		}	
 		
 		currentSection = "portfolio";
-		
-		disableScroller();
 	}
 	if (currentSection === "about") {
 		menuLeft.hide();
@@ -99,6 +113,10 @@ menuRight.click(function () {
 			menuLeft.show();
 		}
 		else {
+			mainSection.show();
+			portfolioSection.show();
+			aboutSection.show();
+			
 			aboutSection.css("-webkit-animation", "slide-out-left 1s ease-in-out forwards");
 			aboutSection.css("animation", "slide-out-left 1s ease-in-out forwards");
 			

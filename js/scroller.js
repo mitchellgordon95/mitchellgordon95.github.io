@@ -1,7 +1,6 @@
-var content = $("#content");
+var content = $("#content *");
 var contentHeight = parseFloat(content.height());
 var triangleHint = $("#triangle-hint");
-var allContentElms = $("#content *");
 var hintHidden = false;
 var scrollCount = 0;
 var scrollerDisabled = false;
@@ -66,11 +65,11 @@ function handleScroll (evt){
 // Depending on how many times we've scrolled, do something fun
 function doFunThings(count) {
 	if ( count == 5 )
-		allContentElms.css("color", "red");
+		content.css("color", "red");
 	else if ( count == 6 )
-		allContentElms.css("color", "#0f0");
+		content.css("color", "#0f0");
 	else if ( count == 7 )
-		allContentElms.css("color", "blue");
+		content.css("color", "blue");
 	else if ( count == 13 ) {
 		content.css("-webkit-animation",  "spin 250ms");
 		content.css("-webkit-animation-iteration-count", "infinite");
@@ -89,7 +88,7 @@ function doFunThings(count) {
 function resetContent () {
 	$("#title").text("Mitchell Gordon");
     $("#tagline").text("Vanderbilt CS 2016");
-    allContentElms.css("color", "#000");
+    content.css("color", "#000");
     content.css("-webkit-animation",  "");
     content.css("-webkit-animation-iteration-count", "");
     content.css("animation",  "");
