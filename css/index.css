@@ -60,11 +60,7 @@ body {
 		margin-top: 20px;
 	}
 	#prof-pics {
-		height: initial;
-	}
-	#prof-pics img {
-		height: initial;
-		width: 90%;
+		height: 200px;
 	}
 	#triangle-hint, #about-section, #portfolio-section {
 		display: none;
@@ -72,8 +68,9 @@ body {
 }
 
 /** Use more legible text for the about and portfolio paragraphs **/
-p {
-	font-family: Lato;
+p, li{
+	font-family: "Verdana";
+	font-size: 20px;
 }
 
 /** Style for the main section */
