@@ -40,27 +40,6 @@ body {
 	transform: translate(-101%, -50%);
 }
 
-/** If we're below a certain width, just make everything on the page static. */
-@media (max-width: 900px) {
-	body {
-		overflow: auto;
-	}
-	#menu-left, #menu-right, #main-section, #about-section, #portfolio-section {
-		position: static;
-		-webkit-transform: none;
-		transform: none;
-	}
-	#menu-left {
-		margin-top: 20px;
-	}
-	#prof-pics {
-		height: 200px;
-	}
-	#triangle-hint, #about-section, #portfolio-section {
-		display: none;
-	}
-}
-
 /** Style for the about section **/
 #prof-pics{
 	text-align: center;
@@ -114,6 +93,26 @@ a {
   	opacity: 0.0;
 }
 
+/** If we're below a certain width, just make everything on the page static. */
+@media (max-width: 900px) {
+	body {
+		overflow: auto;
+	}
+	#menu-left, #menu-right, #main-section, #about-section, #portfolio-section {
+		position: static;
+		-webkit-transform: none;
+		transform: none;
+	}
+	#menu-left {
+		margin-top: 20px;
+	}
+	#prof-pics {
+		height: 150px;
+	}	
+	#triangle-hint, #about-section, #portfolio-section {
+		display: none;
+	}
+}
 
 /** Animations */
 @-webkit-keyframes slide-out-right {
