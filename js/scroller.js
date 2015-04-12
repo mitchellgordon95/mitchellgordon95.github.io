@@ -1,4 +1,4 @@
-var content = $("#content *");
+var content = $("#main-section, #menu-left, #menu-right, #main-section *");
 var contentHeight = parseFloat(content.height());
 var triangleHint = $("#triangle-hint");
 var hintHidden = false;
@@ -18,7 +18,7 @@ function disableScroller() {
 function enableScroller() {
 	$("body").css("overflow", "hidden");
 	scrollerDisabled = false;
-	triangleHint.show();
+	triangleHint.css("display", "");
 	hintHidden = false;
 }
 
@@ -73,7 +73,7 @@ function doFunThings(count) {
 	else if ( count == 7 )
 		content.css("color", "blue");
 	else if ( count == 13 ) {
-		var sections = $("#content div")
+		var sections = $("#main-section, #menu-left, #menu-right");
 		sections.css("-webkit-animation",  "spin 250ms");
 		sections.css("-webkit-animation-iteration-count", "infinite");
 		sections.css("animation",  "spin 250ms");

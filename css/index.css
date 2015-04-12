@@ -1,14 +1,10 @@
 body {
 	background-color: #EBFFF5;
-	overflow: hidden;
-}
-
-#content {
-    width: 100%;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
+    overflow-x: hidden;
 }
-#main-section, #about-section, #portfolio-section {
+#main-section {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     position: absolute;
@@ -16,8 +12,17 @@ body {
     left: 50%;
 }
 #about-section, #portfolio-section {
+	position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+	top: 30px;
 	text-align: left;
-	left: -150%;
+}
+#about-section {
+	left: -200%;
+}
+#portfolio-section {
+	left: 150%;
 }
 
 #menu-left {
@@ -33,17 +38,6 @@ body {
 	left: 100%;
 	-webkit-transform: translate(-101%, -50%);
 	transform: translate(-101%, -50%);
-}
-
-#prof-pics{
-	text-align: center;
-	height: 400px; 
-}
-#prof-pics img {
-	height: 100%;
-}
-#about-section h3 {
-	margin-top: 30px;
 }
 
 /** If we're below a certain width, just make everything on the page static. */
@@ -65,6 +59,23 @@ body {
 	#triangle-hint, #about-section, #portfolio-section {
 		display: none;
 	}
+}
+
+/** Style for the about section **/
+#prof-pics{
+	text-align: center;
+	height: 400px; 
+}
+#prof-pics img {
+	height: 100%;
+}
+#about-section h3 {
+	margin-top: 30px;
+}
+
+/** Style for the portfolio section */
+#portfolio-section h1 {
+	margin-bottom: 20px;
 }
 
 /** Use more legible text for the about and portfolio paragraphs **/

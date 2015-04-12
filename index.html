@@ -12,49 +12,50 @@
 		<script src="bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script>
     </head>
     <body>
-    	<div id="content">
-    		<div id="main-section">
-	        	<h1 id="title">Mitchell Gordon</h1>
-	        	<h3 id="tagline">Vanderbilt CS 2016</h3>
-	        	<a href="http://github.com/mitchellgordon95"><span class="octicon octicon-mark-github"></span></a>
-	        	<a href="/res/resume.pdf"><span class='octicon octicon-file-text'></span></a>
-	        	<a href="mailto:mitchell.gordon95@gmail.com"><span class='octicon octicon-mail'></span></a>
-	        </div>
-	        <div id="menu-left">
-	        	<h3>About</h3>
-	        	<span class="octicon octicon-arrow-left"></span>
-	        </div>
-	        <div id="menu-right">
-	        	<h3>Portfolio</h3>
-	        	<span class="octicon octicon-arrow-right"></span>
-	        </div>
-	    	<div id="about-section">
-	    		<div id="prof-pics">
-	               <img src="img/just-me.jpg" />
-	               <img src="img/holi.jpg" />
-	               <img src="img/professional.jpg" />
-	               <img src="img/vandyhacks-talk.jpg" />
-	               <img src="img/vandyhacks-team.jpg" />
-				</div>
-				<h3>About Me</h3>
-	    		<p>Hey there, I'm Mitchell. Here's some facts:</p>
-    			<ul>
-    			<li>I'm an undergraduate student at Vanderbilt University studying computer science. </li>
-    			<li>My favorite color is ironically a deep, forest green.</li>
-    			<li>I was born in Ohio, but I've lived in the Nashville area for way too long. </li>
-    			<li>I like to longboard but I'm not a skater. I write songs occasionally, but I wouldn't 
-    			call myself a songwriter. </li>
-    			<li>I speak some Japanese, mainly because I secretly love anime.</li>
-    			</ul>
-	    	</div>
-	    	<div id="portfolio-section">
-	    		{% for post in site.posts %}
-	    		<h3>{{ post.title }}</h3>
-	    		<p>{{ post.content }}</p>
-	    		{% endfor %}
-	    	</div>
+   		<div id="main-section">
+        	<h1 id="title">Mitchell Gordon</h1>
+        	<h3 id="tagline">Vanderbilt CS 2016</h3>
+        	<a href="http://github.com/mitchellgordon95"><span class="octicon octicon-mark-github"></span></a>
+        	<a href="/res/resume.pdf"><span class='octicon octicon-file-text'></span></a>
+        	<a href="mailto:mitchell.gordon95@gmail.com"><span class='octicon octicon-mail'></span></a>
         </div>
-		<span class="octicon octicon-triangle-down" id="triangle-hint"></span>
+        <div id="menu-left">
+        	<h3>About</h3>
+        	<span class="octicon octicon-arrow-left"></span>
+        </div>
+        <div id="menu-right">
+        	<h3>Portfolio</h3>
+        	<span class="octicon octicon-arrow-right"></span>
+        </div>
+    	<div id="about-section">
+    		<div id="prof-pics">
+               <img src="img/just-me.jpg" />
+               <img src="img/holi.jpg" />
+               <img src="img/professional.jpg" />
+               <img src="img/vandyhacks-talk.jpg" />
+               <img src="img/vandyhacks-team.jpg" />
+			</div>
+			<h3>About Me</h3>
+    		<p>Hey there, I'm Mitchell. Here's some tidbits:</p>
+   			<ul>
+   			<li>I'm an undergraduate student at Vanderbilt University studying computer science. </li>
+   			<li>My favorite color is ironically a deep, forest green.</li>
+   			<li>I was born in Ohio, but I've lived in the Nashville area for way too long. </li>
+   			<li>I like to longboard but I'm not a skater. I write songs occasionally, but I wouldn't 
+   			call myself a songwriter. </li>
+   			<li>I speak some Japanese, mainly because I secretly love anime.</li>
+   			</ul>
+   			<p>I have too much experience in Android/Java, so I'm trying to branch out. I'm mostly looking at computer graphics
+   			 and artificial intelligence, but I don't think I've found my passion yet.</p>
+    	</div>
+    	<div id="portfolio-section">
+    		<h1>My Work</h1>
+    		{% for post in site.posts %}
+    		<h3>{{ post.title }}</h3>
+    		<p>{{ post.content }}</p>
+    		{% endfor %}
+    	</div>
+    	<span class="octicon octicon-triangle-down" id="triangle-hint"></span>
 		
         <script src="js/scroller.js"></script>
         <script src="js/sections.js"></script>

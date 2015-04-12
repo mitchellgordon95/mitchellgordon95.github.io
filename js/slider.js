@@ -14,4 +14,4 @@ $("#prof-pics").click( function () {
 	$currentPic.show();
 });
 
-setInterval(function () { $("#prof-pics").trigger("click"); }, 4000);
+var timer = setInterval(function () { $("#prof-pics").trigger("click"); }, 4000);
