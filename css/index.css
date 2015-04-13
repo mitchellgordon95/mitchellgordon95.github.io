@@ -60,6 +60,13 @@ body {
 #portfolio-section h1 {
 	margin-bottom: 20px;
 }
+#portfolio-section img {
+	height: 200px;
+	margin-top: 10px;
+}
+#portfolio-section .octicon {
+	font-size: 32px;
+}
 
 /** Use more legible text for the about and portfolio paragraphs **/
 p, li{
