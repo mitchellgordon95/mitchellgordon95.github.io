@@ -85,6 +85,9 @@ function handleScroll (evt){
 
 // Depending on how many times we've scrolled, do something fun
 function doFunThings(count) {
+
+	resetContent();
+	
 	if ( count == -7) {
 		// Replace the main section with an angel version.
 		$("#main-section").html(function (index, oldhtml) {
@@ -111,9 +114,6 @@ function doFunThings(count) {
 		$("#title").text("Congrats! You win!");
 		$("#tagline").text("for now...");
 		blockedBelow = true;
-	}
-	else {
-		resetContent();
 	}
 }
 
