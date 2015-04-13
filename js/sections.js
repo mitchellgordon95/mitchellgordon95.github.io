@@ -5,6 +5,10 @@ var portfolioSection = $("#portfolio-section");
 var menuLeft = $("#menu-left");
 var menuRight = $("#menu-right");
 
+mainSection.show();
+portfolioSection.hide();
+aboutSection.hide();
+
 // Left and right arrows trigger menu's.
 $(document).keydown( function(evt) {
 	if (evt.which == 37)
@@ -30,7 +34,6 @@ menuLeft.click(function () {
 		}
 		else {
 			mainSection.show();
-			portfolioSection.show();
 			aboutSection.show();
 			
 			mainSection.css("-webkit-animation", "slide-out-right 1s ease-in-out forwards");
@@ -39,7 +42,7 @@ menuLeft.click(function () {
 			aboutSection.css("-webkit-animation", "slide-in-right 1s ease-in-out forwards");
 			aboutSection.css("animation", "slide-in-right 1s ease-in-out forwards");
 			
-			setTimeout(function () {menuRight.show()}, 1000);
+			setTimeout(function () {menuRight.show(); mainSection.hide();}, 1000);
 		}	
 		
 		currentSection = "about";
@@ -60,7 +63,6 @@ menuLeft.click(function () {
 		else {
 			mainSection.show();
 			portfolioSection.show();
-			aboutSection.show();
 			
 			portfolioSection.css("-webkit-animation", "slide-out-right 1s ease-in-out forwards");
 			portfolioSection.css("animation", "slide-out-right 1s ease-in-out forwards");
@@ -68,7 +70,7 @@ menuLeft.click(function () {
 			mainSection.css("-webkit-animation", "slide-in-right 1s ease-in-out forwards");
 			mainSection.css("animation", "slide-in-right 1s ease-in-out forwards");
 			
-			setTimeout(function () {menuRight.show(); menuLeft.show();}, 1000);
+			setTimeout(function () {menuRight.show(); menuLeft.show(); portfolioSection.hide();}, 1000);
 		}	
 		
 		currentSection = "main";
@@ -94,7 +96,6 @@ menuRight.click(function () {
 		else {
 			mainSection.show();
 			portfolioSection.show();
-			aboutSection.show();
 			
 			mainSection.css("-webkit-animation", "slide-out-left 1s ease-in-out forwards");
 			mainSection.css("animation", "slide-out-left 1s ease-in-out forwards");
@@ -102,7 +103,7 @@ menuRight.click(function () {
 			portfolioSection.css("-webkit-animation", "slide-in-left 1s ease-in-out forwards");
 			portfolioSection.css("animation", "slide-in-left 1s ease-in-out forwards");
 			
-			setTimeout(function () {menuLeft.show()}, 1000);
+			setTimeout(function () {menuLeft.show(); mainSection.hide();}, 1000);
 		}	
 		
 		currentSection = "portfolio";
@@ -121,7 +122,6 @@ menuRight.click(function () {
 		}
 		else {
 			mainSection.show();
-			portfolioSection.show();
 			aboutSection.show();
 			
 			aboutSection.css("-webkit-animation", "slide-out-left 1s ease-in-out forwards");
@@ -130,7 +130,7 @@ menuRight.click(function () {
 			mainSection.css("-webkit-animation", "slide-in-left 1s ease-in-out forwards");
 			mainSection.css("animation", "slide-in-left 1s ease-in-out forwards");
 			
-			setTimeout(function () {menuRight.show(); menuLeft.show();}, 1000);
+			setTimeout(function () {menuRight.show(); menuLeft.show(); aboutSection.hide();}, 1000);
 		}	
 		
 		currentSection = "main";
