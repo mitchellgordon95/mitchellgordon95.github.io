@@ -3,9 +3,7 @@ var mainSection = $("#main-section");
 var aboutSection = $("#about-section");
 var portfolioSection = $("#portfolio-section");
 var menuLeft = $("#menu-left");
-var leftLabel = $("#menu-left h3");
 var menuRight = $("#menu-right");
-var rightLabel = $("#menu-right h3");
 
 // Left and right arrows trigger menu's.
 $(document).keydown( function(evt) {
@@ -23,7 +21,7 @@ menuLeft.click(function () {
 		
 		menuLeft.hide();
 		menuRight.hide();
-		rightLabel.text("Home");
+		$("#menu-right h3").text("Home");
 		
 		if (mainSection.css("position") == "static") {
 			mainSection.hide();
@@ -50,8 +48,8 @@ menuLeft.click(function () {
 	if(currentSection === "portfolio") {
 		menuLeft.hide();
 		menuRight.hide();
-		leftLabel.text("About")
-		rightLabel.text("Portfolio");
+		$("#menu-left h3").text("About")
+		$("#menu-right h3").text("Portfolio");
 		
 		if (mainSection.css("position") == "static") {
 			portfolioSection.hide();
@@ -86,7 +84,7 @@ menuRight.click(function () {
 		
 		menuLeft.hide();
 		menuRight.hide();
-		leftLabel.text("Home");
+		$("#menu-left h3").text("Home");
 		
 		if (mainSection.css("position") == "static") {
 			mainSection.hide();
@@ -112,8 +110,8 @@ menuRight.click(function () {
 	if (currentSection === "about") {
 		menuLeft.hide();
 		menuRight.hide();
-		leftLabel.text("About")
-		rightLabel.text("Portfolio");
+		$("#menu-left h3").text("About")
+		$("#menu-right h3").text("Portfolio");
 		
 		if (mainSection.css("position") == "static") {
 			aboutSection.hide();
