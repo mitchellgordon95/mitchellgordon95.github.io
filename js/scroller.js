@@ -19,6 +19,9 @@ function disableScroller() {
 	content.css("top", "40%");
 	triangleHint.hide();
 	hintHidden = true;
+	scrollCount = 0;
+	blockedAbove = false;
+	blockedBelow = false;
 }
 
 function enableScroller() {
@@ -89,18 +92,20 @@ function doFunThings(count) {
 		});
 		blockedAbove = true;
 	}
-	else if ( count == 5 )
+	else if ( count == 1 )
 		content.css("color", "red");
-	else if ( count == 6 )
+	else if ( count == 2 )
 		content.css("color", "#0f0");
-	else if ( count == 7 )
+	else if ( count == 3 )
 		content.css("color", "blue");
-	else if ( count == 13 ) {
+	else if ( count == 4 ) {
+		resetContent();
 		var sections = $("#main-section, #menu-left, #menu-right");
 		sections.css("-webkit-animation",  "rainbow-spin 250ms");
 		sections.css("-webkit-animation-iteration-count", "infinite");
 		sections.css("animation",  "rainbow-spin 250ms");
 		sections.css("animation-iteration-count", "infinite");
+		blockedBelow = true;
 	}
 	else if (count == 15) {
 		$("#title").text("Congrats! You win!");
