@@ -70,8 +70,8 @@ body {
 
 /** Use more legible text for the about and portfolio paragraphs **/
 p, li{
-	font-family: "Verdana";
-	font-size: 20px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 1.15em;
 }
 
 /** Style for the main section */
