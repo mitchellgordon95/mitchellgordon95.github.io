@@ -82,9 +82,9 @@ function doFunThings(count) {
 		content.css("color", "blue");
 	else if ( count == 13 ) {
 		var sections = $("#main-section, #menu-left, #menu-right");
-		sections.css("-webkit-animation",  "spin 250ms");
+		sections.css("-webkit-animation",  "rainbow-spin 250ms");
 		sections.css("-webkit-animation-iteration-count", "infinite");
-		sections.css("animation",  "spin 250ms");
+		sections.css("animation",  "rainbow-spin 250ms");
 		sections.css("animation-iteration-count", "infinite");
 	}
 	else if (count == 15) {
