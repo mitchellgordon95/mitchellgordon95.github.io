@@ -3,7 +3,10 @@ var contentHeight = parseFloat(content.height());
 var triangleHint = $("#triangle-hint");
 var hintHidden = false;
 var scrollCount = 0;
+// Doesn't let the user scroll at all on the main page.
 var scrollerDisabled = false;
+// Doesn't let the user scroll past the middle of the screen.
+var blocked = false;
 
 enableScroller();
 
@@ -43,11 +46,19 @@ function handleScroll (evt){
     if (!hintHidden)
         triangleHint.hide();
     
+    var windowHeight = parseFloat($(window).height());
+    
+    // If there's a block at the midline, don't let the user scroll past it.
+    var currentTop = parseFloat(content.css("top"));
+    var nextTop = currentTop + evt.deltaY * evt.deltaFactor;
+    var midline = windowHeight * 0.4;
+    if (blocked && ((currentTop > midline && nextTop < midline) || (currentTop < midline && nextTop > midline)))
+    	return;
+    
     content.css("top", "+=" + evt.deltaY * evt.deltaFactor);
     
     // The top of the content
     var top = parseFloat(content.css("top"));
-    var windowHeight = parseFloat($(window).height());
     var buffer = windowHeight * 3;
     
     // Check if the content is past the bottom of the screen.
@@ -73,6 +84,7 @@ function doFunThings(count) {
 		$("#main-section").html(function (index, oldhtml) {
 			return '<img src="img/Halo.png" id="halo"/><table><tr><td><img src="img/LeftWing.png" id="left-wing"/></td><td>' + oldhtml + '</td><td><img src="img/RightWing.png" id="right-wing"/></td> </tr></table>'
 		});
+		blocked = true;
 	}
 	else if ( count == 5 )
 		content.css("color", "red");
@@ -90,6 +102,7 @@ function doFunThings(count) {
 	else if (count == 15) {
 		$("#title").text("Congrats! You win!");
 		$("#tagline").text("for now...");
+		blocked = true;
 	}
 	else {
 		resetContent();
@@ -114,5 +127,7 @@ function resetContent () {
     content.css("-webkit-animation-iteration-count", "");
     content.css("animation",  "");
     content.css("animation-iteration-count", "");
+    
+    blocked = false;
     
 }
