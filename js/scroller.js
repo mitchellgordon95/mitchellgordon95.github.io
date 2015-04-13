@@ -6,7 +6,8 @@ var scrollCount = 0;
 // Doesn't let the user scroll at all on the main page.
 var scrollerDisabled = false;
 // Doesn't let the user scroll past the middle of the screen.
-var blocked = false;
+var blockedBelow = false;
+var blockedAbove = false;
 
 enableScroller();
 
@@ -52,7 +53,9 @@ function handleScroll (evt){
     var currentTop = parseFloat(content.css("top"));
     var nextTop = currentTop + evt.deltaY * evt.deltaFactor;
     var midline = windowHeight * 0.4;
-    if (blocked && ((currentTop > midline && nextTop < midline) || (currentTop < midline && nextTop > midline)))
+    if (blockedAbove && evt.deltaY > 0 && nextTop > midline)
+    	return;
+    if (blockedBelow && evt.deltaY < 0 && nextTop < midline)
     	return;
     
     content.css("top", "+=" + evt.deltaY * evt.deltaFactor);
@@ -84,7 +87,7 @@ function doFunThings(count) {
 		$("#main-section").html(function (index, oldhtml) {
 			return '<img src="img/Halo.png" id="halo"/><table><tr><td><img src="img/LeftWing.png" id="left-wing"/></td><td>' + oldhtml + '</td><td><img src="img/RightWing.png" id="right-wing"/></td> </tr></table>'
 		});
-		blocked = true;
+		blockedAbove = true;
 	}
 	else if ( count == 5 )
 		content.css("color", "red");
@@ -102,7 +105,7 @@ function doFunThings(count) {
 	else if (count == 15) {
 		$("#title").text("Congrats! You win!");
 		$("#tagline").text("for now...");
-		blocked = true;
+		blockedBelow = true;
 	}
 	else {
 		resetContent();
@@ -128,6 +131,6 @@ function resetContent () {
     content.css("animation",  "");
     content.css("animation-iteration-count", "");
     
-    blocked = false;
+    blockedBelow = blockedAbove = false;
     
 }
