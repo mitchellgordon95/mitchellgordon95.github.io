@@ -42,7 +42,11 @@ menuLeft.click(function () {
 			aboutSection.css("-webkit-animation", "slide-in-right 1s ease-in-out forwards");
 			aboutSection.css("animation", "slide-in-right 1s ease-in-out forwards");
 			
-			setTimeout(function () {menuRight.show(); mainSection.hide();}, 1000);
+			setTimeout(function () {
+				menuRight.show(); 
+				mainSection.hide();
+				location.hash = "about";
+			}, 1000);
 		}	
 		
 		currentSection = "about";
@@ -70,7 +74,11 @@ menuLeft.click(function () {
 			mainSection.css("-webkit-animation", "slide-in-right 1s ease-in-out forwards");
 			mainSection.css("animation", "slide-in-right 1s ease-in-out forwards");
 			
-			setTimeout(function () {menuRight.show(); menuLeft.show(); portfolioSection.hide();}, 1000);
+			setTimeout(function () {
+				menuRight.show(); 
+				menuLeft.show(); 
+				portfolioSection.hide();
+				location.hash = ""}, 1000);
 		}	
 		
 		currentSection = "main";
@@ -103,7 +111,11 @@ menuRight.click(function () {
 			portfolioSection.css("-webkit-animation", "slide-in-left 1s ease-in-out forwards");
 			portfolioSection.css("animation", "slide-in-left 1s ease-in-out forwards");
 			
-			setTimeout(function () {menuLeft.show(); mainSection.hide();}, 1000);
+			setTimeout(function () {
+				menuLeft.show(); 
+				mainSection.hide();
+				location.hash = "portfolio";
+				}, 1000);
 		}	
 		
 		currentSection = "portfolio";
@@ -130,11 +142,21 @@ menuRight.click(function () {
 			mainSection.css("-webkit-animation", "slide-in-left 1s ease-in-out forwards");
 			mainSection.css("animation", "slide-in-left 1s ease-in-out forwards");
 			
-			setTimeout(function () {menuRight.show(); menuLeft.show(); aboutSection.hide();}, 1000);
+			setTimeout(function () {
+				menuRight.show(); 
+				menuLeft.show(); 
+				aboutSection.hide();
+				location.hash = "";}, 1000);
 		}	
 		
 		currentSection = "main";
 		
 		enableScroller();
 	}
-})
+});
+
+//Check the hash for the correct section
+if (location.hash === "#about")
+	menuLeft.trigger("click");
+if (location.hash === "#portfolio")
+	menuRight.trigger("click");
