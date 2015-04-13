@@ -5,6 +5,11 @@ $currentPic = $pics.first();
 $currentPic.show();
 
 $("#prof-pics").click( function () {
+	clearInterval(timer);
+	showNextPic();
+});
+
+function showNextPic () {
 	// Show the next image when clicked.
 	$currentPic.hide();
 	$currentPic = $currentPic.next();
@@ -12,6 +17,5 @@ $("#prof-pics").click( function () {
 		$currentPic = $pics.first();
 	
 	$currentPic.show();
-});
-
-var timer = setInterval(function () { $("#prof-pics").trigger("click"); }, 4000);
+}
+var timer = setInterval( showNextPic , 4000);

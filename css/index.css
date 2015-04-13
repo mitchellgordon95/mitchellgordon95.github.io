@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'Press Start 2P';
+	src: url(../fonts/PressStart2P.ttf);
+}
+
 body {
 	background-color: #EBFFF5;
     text-align: center;
