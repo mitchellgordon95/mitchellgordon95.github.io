@@ -5,6 +5,8 @@ var hintHidden = false;
 var scrollCount = 0;
 var scrollerDisabled = false;
 
+enableScroller();
+
 // Resets and disables the scroller
 function disableScroller() {
 	scrollerDisabled = true;
@@ -66,7 +68,13 @@ function handleScroll (evt){
 
 // Depending on how many times we've scrolled, do something fun
 function doFunThings(count) {
-	if ( count == 5 )
+	if ( count == -7) {
+		// Replace the main section with an angel version.
+		$("#main-section").html(function (index, oldhtml) {
+			return '<img src="img/Halo.png" id="halo"/><table><tr><td><img src="img/LeftWing.png" id="left-wing"/></td><td>' + oldhtml + '</td><td><img src="img/RightWing.png" id="right-wing"/></td> </tr></table>'
+		});
+	}
+	else if ( count == 5 )
 		content.css("color", "red");
 	else if ( count == 6 )
 		content.css("color", "#0f0");
@@ -88,12 +96,23 @@ function doFunThings(count) {
 	}
 }
 
+// Cache the default value of the sections.
+var mainHTML = $("#main-section").html();
+var leftHTML = $("#menu-left").html();
+var rightHTML = $("#menu-right").html();
+
 function resetContent () {
-	$("#title").text("Mitchell Gordon");
-    $("#tagline").text("Vanderbilt CS 2016");
-    content.css("color", "#000");
+	$("#main-section").html(mainHTML);
+	$("#menu-left").html(leftHTML);
+	$("#menu-right").html(rightHTML);
+
+    // Re-query content so it contains all the children of the main section
+    content = $("#main-section, #menu-left, #menu-right, #main-section *");
+	
+	content.css("color", "");
     content.css("-webkit-animation",  "");
     content.css("-webkit-animation-iteration-count", "");
     content.css("animation",  "");
     content.css("animation-iteration-count", "");
+    
 }
