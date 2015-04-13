@@ -58,7 +58,7 @@
 	    		{% if post.image %}
 	    			<img src="{{ post.image }}"/>
 	    		{% endif %}
-	    		<p>{{ post.content }}</p>
+	    		{{ post.content }}
     		{% endfor %}
     	</div>
     	<span class="octicon octicon-triangle-down" id="triangle-hint"></span>
