@@ -34,9 +34,9 @@ function enableScroller() {
 // Scrolling can also be done with the arrow keys
 $(document).keydown( function(evt) {
 	if (evt.which == 38)
-		handleScroll ({deltaY: 40, deltaFactor: 1});
+		handleScroll ({deltaY: 120, deltaFactor: 1});
 	else if (evt.which == 40)
-		handleScroll ({deltaY: -40, deltaFactor: 1});	
+		handleScroll ({deltaY: -120, deltaFactor: 1});	
 });
 
 $(document).ready(function(){
