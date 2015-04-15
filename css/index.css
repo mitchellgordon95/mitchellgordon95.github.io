@@ -45,7 +45,10 @@ body {
 }
 
 /** Style for the about section **/
-#prof-pics{
+#about-section h1 {
+	text-align: center;
+}
+#prof-pics {
 	text-align: center;
 	height: 400px; 
 }
@@ -57,6 +60,12 @@ body {
 }
 
 /** Style for the portfolio section */
+#portfolio-section {
+	text-align: center;
+}
+#portfolio-section p {
+	text-align: left;
+}
 #portfolio-section h1 {
 	margin-bottom: 20px;
 }
