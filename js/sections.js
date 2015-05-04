@@ -18,21 +18,51 @@ $(document).keydown( function(evt) {
 });
 
 
+function showMain() {
+	$("#menu-left h3").text("About")
+	$("#menu-right h3").text("Portfolio");
+	menuRight.show(); 
+	menuLeft.show(); 
+	mainSection.show();
+	portfolioSection.hide();
+	aboutSection.hide();
+	mainSection.css('top', '');
+	menuRight.css('top', '');
+	menuLeft.css('top', '');
+	location.hash = "";
+}
+
+function showAbout() {
+	menuLeft.hide();
+	menuRight.show(); 
+	mainSection.hide();
+	portfolioSection.hide();
+	aboutSection.show();
+	$("#menu-right h3").text("Home");
+	location.hash = "about";
+}
+
+function showPortfolio () {
+	menuRight.hide();
+	menuLeft.show(); 
+	mainSection.hide();
+	aboutSection.hide();
+	portfolioSection.show();
+	$("#menu-left h3").text("Home");
+	location.hash = "portfolio";
+}
+
 menuLeft.click(function () {
 	if (currentSection === "main") {
 
 		disableScroller();
 		
-		menuLeft.hide();
-		menuRight.hide();
-		$("#menu-right h3").text("Home");
-		
 		if (mainSection.css("position") == "static") {
-			mainSection.hide();
-			aboutSection.show();
-			menuRight.show();
+			showAbout();
 		}
 		else {
+			menuLeft.hide();
+			menuRight.hide();
 			mainSection.show();
 			aboutSection.show();
 			
@@ -42,29 +72,20 @@ menuLeft.click(function () {
 			aboutSection.css("-webkit-animation", "slide-in-right 1s ease-in-out forwards");
 			aboutSection.css("animation", "slide-in-right 1s ease-in-out forwards");
 			
-			setTimeout(function () {
-				menuRight.show(); 
-				mainSection.hide();
-				location.hash = "about";
-			}, 1000);
+			setTimeout(showAbout, 1000);
 		}	
 		
 		currentSection = "about";
 		
 	}
 	if(currentSection === "portfolio") {
-		menuLeft.hide();
-		menuRight.hide();
-		$("#menu-left h3").text("About")
-		$("#menu-right h3").text("Portfolio");
 		
 		if (mainSection.css("position") == "static") {
-			portfolioSection.hide();
-			mainSection.show();
-			menuRight.show();
-			menuLeft.show();
+			showMain();
 		}
 		else {
+			menuLeft.hide();
+			menuRight.hide();
 			mainSection.show();
 			portfolioSection.show();
 			
@@ -74,11 +95,7 @@ menuLeft.click(function () {
 			mainSection.css("-webkit-animation", "slide-in-right 1s ease-in-out forwards");
 			mainSection.css("animation", "slide-in-right 1s ease-in-out forwards");
 			
-			setTimeout(function () {
-				menuRight.show(); 
-				menuLeft.show(); 
-				portfolioSection.hide();
-				location.hash = ""}, 1000);
+			setTimeout(showMain, 1000);
 		}	
 		
 		currentSection = "main";
@@ -92,16 +109,14 @@ menuRight.click(function () {
 
 		disableScroller();
 		
-		menuLeft.hide();
-		menuRight.hide();
-		$("#menu-left h3").text("Home");
 		
 		if (mainSection.css("position") == "static") {
-			mainSection.hide();
-			portfolioSection.show();
-			menuLeft.show();
+			showPortfolio();
 		}
 		else {
+			menuLeft.hide();
+			menuRight.hide();
+			
 			mainSection.show();
 			portfolioSection.show();
 			
@@ -111,28 +126,20 @@ menuRight.click(function () {
 			portfolioSection.css("-webkit-animation", "slide-in-left 1s ease-in-out forwards");
 			portfolioSection.css("animation", "slide-in-left 1s ease-in-out forwards");
 			
-			setTimeout(function () {
-				menuLeft.show(); 
-				mainSection.hide();
-				location.hash = "portfolio";
-				}, 1000);
+			setTimeout(showPortfolio, 1000);
 		}	
 		
 		currentSection = "portfolio";
 	}
 	if (currentSection === "about") {
-		menuLeft.hide();
-		menuRight.hide();
-		$("#menu-left h3").text("About")
-		$("#menu-right h3").text("Portfolio");
 		
 		if (mainSection.css("position") == "static") {
-			aboutSection.hide();
-			mainSection.show();
-			menuRight.show();
-			menuLeft.show();
+			showMain();
 		}
 		else {
+			menuLeft.hide();
+			menuRight.hide();
+
 			mainSection.show();
 			aboutSection.show();
 			
@@ -142,11 +149,7 @@ menuRight.click(function () {
 			mainSection.css("-webkit-animation", "slide-in-left 1s ease-in-out forwards");
 			mainSection.css("animation", "slide-in-left 1s ease-in-out forwards");
 			
-			setTimeout(function () {
-				menuRight.show(); 
-				menuLeft.show(); 
-				aboutSection.hide();
-				location.hash = "";}, 1000);
+			setTimeout(showMain, 1000);
 		}	
 		
 		currentSection = "main";
