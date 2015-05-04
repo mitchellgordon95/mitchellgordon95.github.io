@@ -65,7 +65,7 @@ function handleScroll (evt){
     
     // The top of the content
     var top = parseFloat(content.css("top"));
-    var buffer = windowHeight * 3;
+    var buffer = windowHeight;
     
     // Check if the content is past the bottom of the screen.
     var pastBottom = top - windowHeight;
