@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'Press Start 2P';
+	src: url(../fonts/PressStart2P.ttf);
+}
+body {
+	background-color: #000;
+	color: #0f0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/** Use more legible text for the about and portfolio paragraphs **/
+p, li{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 1.15em;
+}
+
+/** Also make the octicons white */
+.octicon {
+	color: #0f0;
+}

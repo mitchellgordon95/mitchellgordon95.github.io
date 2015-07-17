@@ -1,4 +1,4 @@
-var content = $("#main-section, #menu-left, #menu-right, #main-section *");
+var content = $("#main-section, #menu-left, #menu-right");
 var contentHeight = parseFloat(content.height());
 var triangleHint = $("#triangle-hint");
 var hintHidden = false;
@@ -96,18 +96,15 @@ function doFunThings(count) {
 		blockedAbove = true;
 	}
 	else if ( count == 1 )
-		content.css("color", "red");
+		$("body, a, .octicon").css("color", "red");
 	else if ( count == 2 )
-		content.css("color", "#0f0");
-	else if ( count == 3 )
-		content.css("color", "blue");
-	else if ( count == 4 ) {
+		$("body, a, .octicon").css("color", "blue");
+	else if ( count == 3 ) {
 		resetContent();
-		var sections = $("#main-section, #menu-left, #menu-right");
-		sections.css("-webkit-animation",  "rainbow-spin 250ms");
-		sections.css("-webkit-animation-iteration-count", "infinite");
-		sections.css("animation",  "rainbow-spin 250ms");
-		sections.css("animation-iteration-count", "infinite");
+		content.css("-webkit-animation",  "rainbow-spin 250ms");
+		content.css("-webkit-animation-iteration-count", "infinite");
+		content.css("animation",  "rainbow-spin 250ms");
+		content.css("animation-iteration-count", "infinite");
 		blockedBelow = true;
 	}
 	else if (count == 15) {
@@ -127,10 +124,10 @@ function resetContent () {
 	$("#menu-left").html(leftHTML);
 	$("#menu-right").html(rightHTML);
 
-    // Re-query content so it contains all the children of the main section
-    content = $("#main-section, #menu-left, #menu-right, #main-section *");
-	
-	content.css("color", "");
+	$("body, a, .octicon").css("color", "");
+
+	// Re-query the refreshed HTML so our references will work.
+	var content = $("#main-section, #menu-left, #menu-right");
     content.css("-webkit-animation",  "");
     content.css("-webkit-animation-iteration-count", "");
     content.css("animation",  "");

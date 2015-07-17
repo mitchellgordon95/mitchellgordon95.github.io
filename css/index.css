@@ -1,11 +1,6 @@
-@font-face {
-	font-family: 'Press Start 2P';
-	src: url(../fonts/PressStart2P.ttf);
-}
 body {
-	background-color: #EBFFF5;
+	background-color: #FFF;
     text-align: center;
-    font-family: 'Press Start 2P', cursive;
     overflow-x: hidden;
 }
 #main-section {
@@ -84,6 +79,9 @@ p, li{
 }
 
 /** Style for the main section */
+#title {
+	cursor: pointer;
+}
 h1, h3 {
 	margin:0;
 }
@@ -102,15 +100,15 @@ a {
 	
 	-webkit-transform: translate(-50%, -100%);
   	transform: translate(-50%, -100%);
-  	
-  	-webkit-animation: pulsate 2s ease-out;
+ 	opacity: 0.0;
+}
+.pulse {
+	-webkit-animation: pulsate 2s ease-out;
   	-webkit-animation-iteration-count: infinite;
-  	-webkit-animation-delay: 10s;  	
+  	-webkit-animation-delay: 3s;  	
   	animation: pulsate 2s ease-out;
   	animation-iteration-count: infinite;
-  	animation-delay: 10s;
-  	
-  	opacity: 0.0;
+  	animation-delay: 3s;
 }
 
 /** If we're below a certain width, just make everything on the page static. */
