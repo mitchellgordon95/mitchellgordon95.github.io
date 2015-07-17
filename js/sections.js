@@ -5,6 +5,9 @@ var portfolioSection = $("#portfolio-section");
 var menuLeft = $("#menu-left");
 var menuRight = $("#menu-right");
 
+// The timeout key for the transition that is currently happening.
+var currentTransition = null;
+
 mainSection.show();
 portfolioSection.hide();
 aboutSection.hide();
@@ -53,6 +56,12 @@ function showPortfolio () {
 }
 
 menuLeft.click(function () {
+	
+	if (currentTransition != null){
+		clearTimeout(currentTransition);
+		currentTransition = null;
+	}
+	
 	if (currentSection === "main") {
 
 		disableScroller();
@@ -72,7 +81,7 @@ menuLeft.click(function () {
 			aboutSection.css("-webkit-animation", "slide-in-right 1s ease-in-out forwards");
 			aboutSection.css("animation", "slide-in-right 1s ease-in-out forwards");
 			
-			setTimeout(showAbout, 1000);
+			currentTransition = setTimeout(showAbout, 1000);
 		}	
 		
 		currentSection = "about";
@@ -95,7 +104,7 @@ menuLeft.click(function () {
 			mainSection.css("-webkit-animation", "slide-in-right 1s ease-in-out forwards");
 			mainSection.css("animation", "slide-in-right 1s ease-in-out forwards");
 			
-			setTimeout(showMain, 1000);
+			currentTransition = setTimeout(showMain, 1000);
 		}	
 		
 		currentSection = "main";
@@ -105,6 +114,12 @@ menuLeft.click(function () {
 });
 
 menuRight.click(function () {
+	
+	if (currentTransition != null) {
+		clearTimeout(currentTransition);
+		currentTransition = null;
+	}
+	
 	if (currentSection === "main") {
 
 		disableScroller();
@@ -126,7 +141,7 @@ menuRight.click(function () {
 			portfolioSection.css("-webkit-animation", "slide-in-left 1s ease-in-out forwards");
 			portfolioSection.css("animation", "slide-in-left 1s ease-in-out forwards");
 			
-			setTimeout(showPortfolio, 1000);
+			currentTransition = setTimeout(showPortfolio, 1000);
 		}	
 		
 		currentSection = "portfolio";
@@ -149,7 +164,7 @@ menuRight.click(function () {
 			mainSection.css("-webkit-animation", "slide-in-left 1s ease-in-out forwards");
 			mainSection.css("animation", "slide-in-left 1s ease-in-out forwards");
 			
-			setTimeout(showMain, 1000);
+			currentTransition = setTimeout(showMain, 1000);
 		}	
 		
 		currentSection = "main";
