@@ -49,6 +49,7 @@ body {
 #prof-pics {
 	text-align: center;
 	height: 400px; 
+	cursor: pointer
 }
 #prof-pics img {
 	height: 100%;
