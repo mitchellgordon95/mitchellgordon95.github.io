@@ -37,8 +37,8 @@ body {
 	position: absolute;
 	top: 40%;
 	left: 100%;
-	-webkit-transform: translate(-101%, -50%);
-	transform: translate(-101%, -50%);
+	-webkit-transform: translate(-110%, -50%);
+	transform: translate(-110%, -50%);
 	cursor:pointer;
 }
 
