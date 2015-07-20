@@ -30,6 +30,7 @@ body {
 	left: 5px;
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
+	cursor: pointer;
 }
 #menu-right {
 	position: absolute;
@@ -37,6 +38,7 @@ body {
 	left: 100%;
 	-webkit-transform: translate(-101%, -50%);
 	transform: translate(-101%, -50%);
+	cursor:pointer;
 }
 
 /** Style for the about section **/
