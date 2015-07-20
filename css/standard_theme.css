@@ -28,6 +28,8 @@ body {
 h1 {
 	font-family: 'pacificoregular';
 	font-size: 5em;
+	/* Fixes a bug where some browsers don't redraw the whole box, leaving a trail of pixels during animations */
+	outline: 20px solid transparent;
 }
 h3  {
 	font-family: 'kaushan_scriptregular';
