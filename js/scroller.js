@@ -25,7 +25,9 @@ function disableScroller() {
 }
 
 function enableScroller() {
-	$("body").css("overflow", "hidden");
+	// Only hide overflow if we're not on mobile.
+	if ($("#main-section").css("position") !== "static")
+		$("body").css("overflow", "hidden");
 	scrollerDisabled = false;
 	triangleHint.css("display", "");
 	hintHidden = false;
