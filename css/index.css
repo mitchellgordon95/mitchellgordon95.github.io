@@ -53,6 +53,7 @@ body {
 #prof-pics img {
 	height: 100%;
 	cursor: pointer;
+    max-width: 100%; 
 }
 #about-section h1 {
 	margin-bottom: 30px;
