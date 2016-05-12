@@ -1,5 +1,5 @@
 ---
-title: Horrible Subs Download Manager 
+title: HS Download Manager 
 image: img/HSDownloadManager.png
 github: http://mitchellgordon95.github.io/HSDownloadManager
 ---

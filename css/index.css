@@ -1,92 +1,9 @@
 body {
-	background-color: #FFF;
+    background-color: #FFF;
     text-align: center;
-    overflow-x: hidden;
-}
-#main-section {
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    position: absolute;
-    top: 40%;
-    left: 50%;
-}
-#about-section, #portfolio-section {
-	position: absolute;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-	top: 30px;
-	text-align: left;
-}
-#about-section {
-	left: -200%;
-}
-#portfolio-section {
-	left: 150%;
-}
-
-#menu-left {
-	position: absolute;
-	top: 40%;
-	left: 5px;
-	-webkit-transform: translate(0, -50%);
-	transform: translate(0, -50%);
-	cursor: pointer;
-	margin-left: 10px;
-}
-#menu-right {
-	position: absolute;
-	top: 40%;
-	left: 100%;
-	-webkit-transform: translate(-110%, -50%);
-	transform: translate(-110%, -50%);
-	cursor:pointer;
-}
-
-/** Style for the about section **/
-#about-section h1 {
-	text-align: center;
-}
-#prof-pics {
-	text-align: center;
-	height: 400px; 
-}
-#prof-pics img {
-	height: 100%;
-	cursor: pointer;
-    max-width: 100%; 
-}
-#about-section h1 {
-	margin-bottom: 30px;
-}
-
-/** Style for the portfolio section */
-#portfolio-section {
-	text-align: center;
-}
-#portfolio-section p {
-	text-align: left;
-}
-#portfolio-section h1 {
-	margin-bottom: 20px;
-}
-#portfolio-section img {
-	height: 200px;
-	margin-top: 10px;
-}
-#portfolio-section .octicon {
-	font-size: 32px;
-}
-
-/** Use more legible text for the about and portfolio paragraphs **/
-p, li{
-	font-family: Tahoma, Geneva, sans-serif;
-	font-size: 1.15em;
 }
 
 /** Style for the main section */
-#title {
-	cursor: pointer;
-}
 h1, h3 {
 	margin:0;
 }
@@ -97,101 +14,59 @@ a {
 	font-size: 64px;
 }
 
-/** The little pulsing triangle on the bottom of the main screen that hints at the infinite scroller*/
-#triangle-hint {
-	position: absolute;
-	top: 100%;
-	left:50%;
-	
-	-webkit-transform: translate(-50%, -100%);
-  	transform: translate(-50%, -100%);
- 	opacity: 0.0;
+/** Style for the portfolio section */
+#portfolio-section {
+	text-align: center;
 }
-.pulse {
-	-webkit-animation: pulsate 2s ease-out;
-  	-webkit-animation-iteration-count: infinite;
-  	-webkit-animation-delay: 3s;  	
-  	animation: pulsate 2s ease-out;
-  	animation-iteration-count: infinite;
-  	animation-delay: 3s;
+/*
+Each portfolio item is a 280 x 280 px box.
+40px of height for the title, 240 for the picture / text.
+*/
+.portfolio-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+    margin: 10px;
 }
-
-/** If we're below a certain width, just make everything on the page static. */
-@media (max-width: 900px) {
-	body {
-		overflow: auto;
-	}
-	#menu-left, #menu-right, #main-section, #about-section, #portfolio-section {
-		position: static;
-		-webkit-transform: none;
-		transform: none;
-	}
-	#menu-left {
-		margin-top: 20px;
-	}
-	#prof-pics {
-		height: 150px;
-	}	
-	#triangle-hint, #about-section, #portfolio-section {
-		display: none;
-	}
+.portfolio-item h3 {
+    line-height: 40px;
 }
-
-/** Animations */
-@-webkit-keyframes slide-out-right {
-	0% {left: 50%; }
-	100% {left: 150%; }
+.portfolio-item-content {
+  position: relative;
+  height: 245px;
+  overflow: auto;
 }
-@keyframes slide-out-right {
-	0% {left: 50%; }
-	100% {left: 150%; }
+.portfolio-item-content img{
+  width: 100%;
 }
-
-@-webkit-keyframes slide-out-left {
-	0% {left: 50%; }
-	100% {left: -100%; }
+.portfolio-item-content p {
+	text-align: left;
+  font-size: 1.25em;
 }
-@keyframes slide-out-left {
-	0% {left: 50%; }
-	100% {left: -100%; }
+/*
+If the text comes after an image, hide it until
+the user hovers over it.
+*/
+.portfolio-item-content img + p {
+    display: none;
+}
+.portfolio-item-content:hover p {
+    display: block;
+}
+.portfolio-item-content:hover img{
+    width: 50%;
+    float: right;
+}
+#portfolio-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#portfolio-section .octicon {
+	font-size: 32px;
 }
 
-@-webkit-keyframes slide-in-left {
-	0% {left: 150%; }
-	100% {left: 50%; }
-}
-@keyframes slide-in-left {
-	0% {left: 150%; }
-	100% {left: 50%; }
-}
-
-@-webkit-keyframes slide-in-right {
-	0% {left: -100%; }
-	100% {left: 50%; }
-}
-@keyframes slide-in-right {
-	0% {left: -100%; }
-	100% {left: 50%; }
-}
-
-@-webkit-keyframes pulsate {
-	0% {-webkit-transform: opacity: 0.0;}
-    50% {opacity: 1.0;}
-    100% {-webkit-transform: opacity: 0.0;}
-}
-@keyframes pulsate {
-	0% {transform: opacity: 0.0;}
-    50% {opacity: 1.0;}
-    100% {transform: opacity: 0.0;}
-}
-
-@-webkit-keyframes rainbow-spin {
-	0% {-webkit-transform: translate(-50%, -50%) rotate(0deg); color: #ff0000;}
-	50% {-webkit-transform: translate(-50%, -50%) rotate(180deg); color: #00ff00;}
-    100% {-webkit-transform: translate(-50%, -50%) rotate(360deg); color: #0000ff;}
-}
-@keyframes rainbow-spin {
-	0% {transform: translate(-50%, -50%) rotate(0deg); color: #ff0000;}
-	50% {transform: translate(-50%, -50%) rotate(180deg); color: #00ff00;}
-    100% {transform: translate(-50%, -50%) rotate(360deg); color: #0000ff;}
+/** Use more legible text for the about and portfolio paragraphs **/
+p, li{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 1.15em;
 }

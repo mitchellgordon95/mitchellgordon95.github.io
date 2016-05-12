@@ -15,95 +15,38 @@
    		<div id="main-section">
         	<h1 id="title">Mitchell Gordon</h1>
         	<h3 id="tagline">Vanderbilt CS 2016</h3>
-        	<a href="http://github.com/mitchellgordon95"><span class="octicon octicon-mark-github"></span></a>
-        	<a href="/res/resume.pdf"><span class='octicon octicon-file-text'></span></a>
-        	<a href="mailto:mitchell.gordon95@gmail.com"><span class='octicon octicon-mail'></span></a>
-        </div>
-        <div id="menu-left">
-        	<h3>About</h3>
-        	<span class="octicon octicon-arrow-left"></span>
-        </div>
-        <div id="menu-right">
-        	<h3>Portfolio</h3>
-        	<span class="octicon octicon-arrow-right"></span>
-        </div>
+          <div>
+            <a href="http://github.com/mitchellgordon95"><span class="octicon octicon-mark-github"></span></a>
+            <a href="/res/resume.pdf"><span class='octicon octicon-file-text'></span></a>
+            <a href="mailto:mitchell.gordon95@gmail.com"><span class='octicon octicon-mail'></span></a>
+          </div>
+      </div>
     	<div id="about-section">
-			<h1>About Me</h1>
-    		<div id="prof-pics">
-               <img src="img/just-me.jpg" />
-               <img src="img/professional.jpg" />
-               <img src="img/spicy.jpg"/>
-               <img src="img/vandyhacks-team.jpg" />
-               <img src="img/horses.jpg"/>
-               <img src="img/vandyhacks-talk.jpg" />
-               <img src="img/epic_mountain.jpg"/>
-               <img src="img/smirk.jpg" />
-               <img src="img/holi.jpg" />
-			</div>
-			<div id="about-text">
-    		<p> Theoretically, we meet by chance, on a sweltering August Tuesday. As you're walking down 21st Avenue, I pass you on the sidewalk, zipping by on my half-sized longboard. You're carrying too many groceries 
-    		(because two trips is for the weak), and my sudden appearance startles you into dropping your bags. I slide to a stop and apologize, helping you gather the bananas and Bagel
-    		Bites that spilled onto the floor.</p>
-    		<p> You look pretty exhausted, so I offer to help you carry your bags. You graciously accept, and we begin walking to your apartment down the road. After a moment of walking in
-    		awkward silence, we engage in the usual smalltalk. </p>
-    		<ul style="list-style-type: none">
-    			<li>"So, where are you from?"</li>
-    			<li>"Well, I was born in Ohio, but I've lived in Brentwood for most of my life. It's like 20 minutes south of Nashville."</li>
-    			<li>"And now you go to Vanderbilt?"</li>
-    			<li>"Yep."</li>
-    			<li>"How is it?"</li>
-    			<li>"It's fine. According to Princeton Review, we're the happiest students in the country."</li>
-    			<li>"How do they tell? Is there like a survey or something?"</li>
-    			<li>"Beats me. They probably make it all up anyways."</li>
-            </ul>
-            <p>We round the corner on Division Street. A country music cowboy passes us in the opposite direction, carrying an acoustic guitar in a case. We stare at him silently and
-            judge him for being so mainstream. I bet he only knows like four chords.</p>
-    		<ul style="list-style-type: none">
-    			<li>"What's your major?"</li>
-    			<li>"Computer Science."</li>
-    			<li>"Oh! I keep hearing about that, but I have no idea what it is."</li>
-    			<li>"It covers a lot of topics. I like to think of it as the mathematics of computers. Theoretically, what are computers capable of? How can we make them faster? Stuff like that."</li>
-    			<li>"So you're not IT?"</li>
-    			<li>"No. Not really. I mean, some CS people are more practical and write programs for businesses, others are poor and write research papers."</li>
-    			<li>"So which are you?"</li>
-    			<li>"Ask me in a year. I'm actually applying to grad school right now. I think Artificial Intelligence is really cool, but I also enjoy not being poor."</li>
-    		</ul>
-    		<p> The conversation drifts over to your interests, and we discover we have a mutual love for Japanese anime. You actually spent a year in Japan and can speak Japanese nearly fluently.
-    		I invite you to come have dinner at my dorm some time. It's an international dorm with a really good cafeteria. We have a bunch of halls that each speak a different language, and every
-    		week day we eat dinner together to practice. </p>
-    		<p> As we arrive at your apartment, you hand me a business card. It turns out you're actually the CEO of a unicorn startup in the Bay area. You've been scouting me for weeks; 
-    		this was all just an elaborate test to ensure that I'm not an android sent by Larry Page to spy on your company. But now that you're sure I'm a real person, you offer me a job on the
-    		spot. You wave goodbye and say, "see you soon," as the elevator doors slide shut. </p>
-    		<p> My hand starts vibrating and beeping as soon as you leave. I look at my palm. The letters "L.P." are flashing on it in bright red. I bring my hand up to my ear like it's a phone,
-    		and an antenna shoots up out of my thumb.</p> 
-    		<ul style="list-style-type: none">
-    			<li>"So, how did it go?"</li>
-    			<li>"I'm in."</li>
-            </ul>
-            <p>To be continued...</p>
-    		</div>
-    	</div>
+        <div id="about-text">
+        </div>
+      </div>
     	<div id="portfolio-section">
-    		<h1>My Work</h1>
     		{% for post in site.posts %}
-	    		<h3>
-	    		{{ post.title }}
-	    		{% if post.github %}			
-        			<a href="{{ post.github }}"><span class="octicon octicon-mark-github"></span></a>
-        		{% endif %}
-	    		</h3>
-	    		{% if post.image %}
-	    			<a href="{{ post.image }}"> <img src="{{ post.image }}"/> </a>
-	    		{% endif %}
-	    		{{ post.content }}
+          <div class="portfolio-item">
+            <h3>
+            {{ post.title }}
+            {% if post.github %}			
+                <a href="{{ post.github }}"><span class="octicon octicon-mark-github"></span></a>
+            {% endif %}
+            </h3>
+            <div class="portfolio-item-content" />
+            
+              {% if post.image %}			
+              <img src="{{ post.image }}"/>
+              {% endif %}
+              {{ post.content }}
+
+            </div>
+          </div>
     		{% endfor %}
     	</div>
-    	<span class="octicon octicon-triangle-down" id="triangle-hint"></span>
 		
-        <script src="js/scroller.js"></script>
-        <script src="js/sections.js"></script>
         <script src="js/slider.js"></script>
-        <script src="js/theme.js"></script>
         <!-- Google Analytics -->
         <script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
