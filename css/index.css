@@ -4,6 +4,12 @@ body {
 }
 
 /** Style for the main section */
+#main-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 h1, h3 {
 	margin:0;
 }
@@ -14,59 +20,11 @@ a {
 	font-size: 64px;
 }
 
-/** Style for the portfolio section */
-#portfolio-section {
-	text-align: center;
-}
-/*
-Each portfolio item is a 280 x 280 px box.
-40px of height for the title, 240 for the picture / text.
-*/
-.portfolio-item {
-    display: inline-block;
-    vertical-align: top;
-    width: 280px;
-    margin: 10px;
-}
-.portfolio-item h3 {
-    line-height: 40px;
-}
-.portfolio-item-content {
-  position: relative;
-  height: 245px;
-  overflow: auto;
-}
-.portfolio-item-content img{
-  width: 100%;
-}
-.portfolio-item-content p {
-	text-align: left;
-  font-size: 1.25em;
-}
-/*
-If the text comes after an image, hide it until
-the user hovers over it.
-*/
-.portfolio-item-content img + p {
-    display: none;
-}
-.portfolio-item-content:hover p {
-    display: block;
-}
-.portfolio-item-content:hover img{
-    width: 50%;
-    float: right;
-}
-#portfolio-section h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-#portfolio-section .octicon {
-	font-size: 32px;
-}
-
-/** Use more legible text for the about and portfolio paragraphs **/
-p, li{
-	font-family: Tahoma, Geneva, sans-serif;
-	font-size: 1.15em;
+@media(max-width: 900px) {
+    #main-section {
+        position: static;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
 }
