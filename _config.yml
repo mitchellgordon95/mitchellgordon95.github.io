@@ -21,6 +21,7 @@ url: "http://mitchgordon.me" # the base hostname & protocol for your site
 github_username: mitchellgordon95 
 disqus:
   shortname: mitchells-blog 
+google_analytics: UA-66541822-1
 
 # Build settings
 markdown: kramdown
