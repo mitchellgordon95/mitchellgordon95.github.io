@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Parable of P-Values"
+date:   2018-04-27 12:33:18 -0400
 categories: [math, statistics]
 ---
 
