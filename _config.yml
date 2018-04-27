@@ -19,6 +19,9 @@ description: A blog about intelligence, me, and other stuff
 baseurl: "" # the subpath of your site
 url: "http://mitchgordon.me" # the base hostname & protocol for your site
 github_username: mitchellgordon95 
+disqus:
+  shortname: mitchells-blog 
+
 
 # Build settings
 markdown: kramdown
