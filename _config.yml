@@ -22,10 +22,10 @@ github_username: mitchellgordon95
 disqus:
   shortname: mitchells-blog 
 
-
 # Build settings
 markdown: kramdown
 theme: minima
+show_excerpts: true
 plugins:
   - jekyll-feed
 
