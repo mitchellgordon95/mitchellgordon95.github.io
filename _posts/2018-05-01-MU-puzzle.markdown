@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "The MU Puzzle"
+categories: math
+---
+In the 1920's, an American logician named Emil Post invented a formal system commonly called a [Post production system](https://en.wikipedia.org/wiki/Post_canonical_system). A Post production system has three parts: an alphabet (like the English alphabet), an initial set of words that are assumed to exist, and a set of production rules. To use the system, you start with the intial words and apply the production rules to make new words out of the ones you already have, ad infinitum. Given these three parts the formal system is defined, and all the words that you could possibly create with this system are implicitly determined (but not necessarily known).
+
+I bring up Emil's system because I've been reading [Gödel, Escher, Bach](https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach) by Douglas Hofstadter, and he uses it to propose a fun puzzle. Well, he really uses it as a simple example of a formal system, with which he demonstrates fundamental concepts (like decision processes and incompleteness). I really only care about the puzzle, however, which will be the subject of today's post. By the way, GEB is an amazing book (as far as I can tell having read the first two chapters), and I highly recommend it.
+
+In Hofstadter's specific instance of a Post production system, the alphabet has three letters: *M*, *I*, and *U*. So any word that exists in our system will be composed of *M*, *I*, or *U*. Some examples: *MUM*, *IUIU*, *UUUUUIIII*, etc. 
+
+There are four rules in Hofstadter's system for changing existing words into new words.
+
+**Rule 1.**  
+If a word ends in *I*, you can add *U* to the end. For example, *MI* may become *MIU*. *MUUUMUUI* may become *MUUUMUUIU*.
+
+**Rule 2.**  
+If a word is of the form *Mx*, you may add *Mxx* to your list of existing words. Notice that "x" is not in our alphabet, it's a variable representing some collection of letters. Some examples:  
+*MUM* may become *MUMUM*  
+*MIU* may become *MIUIU*  
+*MU* may become *MUU*
+
+**Rule 3.**  
+If *III* occurs in a word, you may make a new word with *U* in place of *III*. Examples:  
+*UMIIIMU* could become *UMUMU*  
+*MIIII* could become *MIU* or *MUI*  
+*IIMII* can't become anything using this rule, since three *I*'s are not connected  
+*MIII* could become *MU*
+
+**Rule 4.**  
+If *UU* occurs in a word, you may get rid of it. Examples:  
+From *UUU*, get *U*  
+From *MUUUIII* get *MUIII*
+
+Notice that multiple rules may apply to a word at the same time. It is up to you to decide which rules to use and when.
+
+And now that we have the system, finally we can state the puzzle: **starting with *MI*, can you get *MU*?**
+
+Note that the puzzle *does not* ask "how do you get to *MU* from *MI*" but rather "is it possible to get to *MU* from *MI*?" If it is possible, how do you do it? If it's not possible, can you prove that it's not?
+
+If you're trying this at home, have fun with it. Start with *MI* and write down some new words using the rules. See if you can identify some patterns.
+
+For the solution, I'll be writing a post soon about how I went about solving it. If you're impatient, the solution is all over the internet.
+
+\- Mitchell
