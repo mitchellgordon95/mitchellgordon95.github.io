@@ -3,11 +3,10 @@ layout: post
 title:  "The Joy of Silence"
 categories: mind
 ---
-There is a special place in hell reserved for people who talk loudly in libraries. It annoys me to no end when someone doesn't understand the importance of silence. 
 
-Silence can mean many things depending on your attitude. 
+There is a special place in hell reserved for people who talk loudly in libraries for two reasons: 1. silence is hard to come by and 2. silence is indispensably useful. Some of this usefulness comes from silence's versatility; there are many ways in which silence can beneficially impact the mind.
 
-For some, it means a lack of distraction, supporting the ability to hone in on a task with all of one's mental capacities. Focusing in this way can range in intensity from a few hours in the library to a herculean feat, requiring days of distraction-free time to empty the working mind of all thoughts except the relevant context surrounding the task.
+Sometimes it is simply a lack of distraction, supporting the ability to hone in on a task with all of one's mental capacities. Focusing in this way can range in intensity from a few hours in the library to a herculean feat, in which the the working mind is emptied of all thoughts except the relevant context surrounding the task for days on end.
 
 [Cal Newport](http://calnewport.com/blog/), a CS professor and study hacks guru, goes into the nature of this "deep work" in [his book](http://calnewport.com/books/deep-work/) of the same name. In short, he claims striving to master deep work will increase your life's satisfaction, make you valuable in the economy, and help you achieve intellectual tasks that might have been previously impossible. He also claims that most of your time spent in deep work is spent ramping up, while most of the productivity only happens after you've achieved "deep mode". None of it can be accomplished, however, in the presence of distractions (phones, internet, noise, etc.), which makes having a silent place so important; whenever someone distracts you, you have to start your ramp-up process over again.
 
