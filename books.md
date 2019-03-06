@@ -3,7 +3,7 @@ layout: page
 title: Books
 permalink: /books/
 ---
-I'm just going to drop these here and maybe organize later / talk about some of these later.
+I'm just going to drop these here and maybe organize / talk about some of these later.
 
 [Predictably Irrational](https://amzn.to/2XCh3LH) - Dan Ariely
 
