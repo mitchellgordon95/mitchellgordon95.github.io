@@ -5,7 +5,7 @@ categories: misc
 ---
 Dear Facebook,
 
-If you want to facilitate meaningful social interactions, get rid of the feed, and maybe even the wall. Keep events, keep market, and keep messenger. Everything else is great.
+If you want to facilitate meaningful social interactions, get rid of the feed. Keep events, keep market, and keep messenger. Everything else is great.
 
 Yes, it's easy to get users to post on their wall. But no, unfortunately, sharing photos of your last Japan trip with anyone who will look at them isn't a meaningful interaction, it's *narcissism*. Clicking "like" on a photo of a cute dog isn't a meaningful interaction, it's a [*little bump of cocaine*](http://sitn.hms.harvard.edu/flash/2018/dopamine-smartphones-battle-time/). If you want users to have "meaningful" interactions, make them actually talk to each other. If they want to share something, make them choose exactly who to share it with. That makes that person or group *special*, and when they respond, you feel like you've shared a special, private moment together. This is how you build friendships (or [rapport](https://en.wikipedia.org/wiki/Rapport), if you're a manipulative salesman). 
 
