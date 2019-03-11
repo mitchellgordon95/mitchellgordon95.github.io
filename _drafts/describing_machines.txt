@@ -7,3 +7,5 @@ Writing a good program is like describing how a machine works to someone who's n
 3. Incoherence. While describing the machine, jumping constantly between descriptions of different parts of the machine. Aka spaghetti code. Linearity in descriptions is highly desirable.
 
 In general, we want to be able to succinctly say what the machine does. If the listener is so inclined, the parts of the explanation should be structured such that expounding on any one part is natural and direct.
+
+A fun class activity for this might involve building something with kinects. Except only half the team knows what the task is, and writes instructions for the other half of the team to build it. Like a rollercoaster or something. Points awarded for length of rollercoaster, but the built thing must match the original team's model *exactly*, else no points.

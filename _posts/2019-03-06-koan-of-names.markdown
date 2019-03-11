@@ -24,3 +24,5 @@ The master replied, "I did not name it. The ball did not name itself. You called
 The master then chopped the ball into many pieces, until it became dust and dissolved into the wind.
 
 "Names are useful, but they are not truth. The names you create are your ignorance of the world."
+
+\- 金道
