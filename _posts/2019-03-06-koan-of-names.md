@@ -3,11 +3,11 @@ layout: post
 title:  "Koan of Names"
 categories: zen
 ---
-The master asked his student, "what is a ball?"
+The master asked her student, "what is a ball?"
 
 "It is round. It rolls, and sometimes bounces," the student replied.
 
-The master reached into his robe, revealing a perfect sphere. "What is this?" he asked.
+The master reached into his robe, revealing a perfect sphere. "What is this?" she asked.
 
 The student replied that it was a ball.
 
