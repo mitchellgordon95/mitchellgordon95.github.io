@@ -9,7 +9,7 @@ The student sought enlightenment.
 
 The master answered, "play me the best music, and I will tell you the best way to live."
 
-So the student purchased a lute from a local merchant, and played the master a song.
+So the student purchased a lute from a local merchant and played the master a song.
 
 "That is not best," the master said. 
 
@@ -24,3 +24,5 @@ In a fury, the student smashed the lute on the ground repeatedly, making a great
 "Ah, finally! You have played the best music... for me."
 
 The student was enlightened.
+
+- 金道
