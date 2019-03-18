@@ -172,12 +172,11 @@ doing a bunch of algebra. But thinking about the geometry just makes it
 feel... obvious. Note that we ignored some very important cases (what about
 negative numbers?), but we can figure that out later.
 
-What's nice about having the intution is that extensions come just as naturally. For
-example: finding the multiplicative inverse of a complex number.
-
-In other words, what number undoes the transformation of multiplying by
-$$(c+di)$$? Obviously it would need to rotate by the opposite angle, and then
-scale by the inverse scale. More
+What's nice about having the intution is that extensions come just as naturally.
+For example: finding the multiplicative inverse of a complex number. In other
+words, what number undoes the transformation of multiplying by $$(c+di)$$?
+Obviously it would need to rotate by the opposite angle, and then scale by the
+inverse scale. More
 [here](https://betterexplained.com/articles/intuitive-arithmetic-with-complex-numbers/).
 
 So yeah, complex numbers are cool. Not sure why I never used them before, but it
