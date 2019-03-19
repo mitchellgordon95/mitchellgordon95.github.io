@@ -7,7 +7,7 @@ The master asked her student, "what is a ball?"
 
 "It is round. It rolls, and sometimes bounces," the student replied.
 
-The master reached into his robe, revealing a perfect sphere. "What is this?" she asked.
+The master reached into her robe, revealing a perfect sphere. "What is this?" she asked.
 
 The student replied that it was a ball.
 
