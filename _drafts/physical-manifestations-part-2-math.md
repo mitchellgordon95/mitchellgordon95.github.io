@@ -3,6 +3,8 @@ title: "Physical Manifestations, Part 2: Math"
 layout: post
 categories: mathematics
 ---
+Quantifying concreteness. How a word is depends on the range of things that you can connect with it. Stone-henge vs. rectangles.
+
 ## Mathematics
 What about math? What even is math? Most people have trouble answering this
 question, but let's take a stab at it with the "physical manifestations" idea.
