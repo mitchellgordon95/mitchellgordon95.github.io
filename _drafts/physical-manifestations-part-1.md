@@ -17,8 +17,7 @@ mathemathics), I usually fall back to this one: anything that matters must have
 a physical manifestation. This took me a while to get to.
 
 On one hand, this seems perfectly reasonable. A little dumb, even. If you can't
-ever touch, hear, or see something, why should you care about it? Why think
-about eating an apple, if the apple will never exist?
+ever touch, hear, or see something, why should you care about it? Under this definition, something without a physical manifestation will never influence your life in any way.
 
 On the other hand, I catch a lot of flak for this view from my friends and
 colleagues... what about the mind? The soul? Fiction? Mathematics, language? How
