@@ -1,5 +1,14 @@
-## Physical Manifestations: A Trick for Understanding
+## Practical Physicalism: an Introduction
+
+How to learn? How to approach unfamiliar territory? How to organize information in your brain?
+
 ### First Principles
+https://www.youtube.com/watch?v=NV3sBlRgzTI (musk battery)
+https://www.gurufocus.com/news/634228/first-principle-thinking--how-great-minds-think- (musk spaceship)
+http://cmt.dur.ac.uk/sjc/thesis_mcg/node6.html (physics, electrons, matter, etc.)
+http://theengineeringmanager.com/growth/first-principles-and-asking-why/ (programming, )
+
+  - physics thinking
   - When understanding something unfamiliar, we break it down into basic
     building blocks, and reconstruct them using simpler rules
   - This lets us understand the world with a very limited set of things we have
@@ -10,10 +19,34 @@
     always hold up in new situations. It might still be useful, however, in cases
     where not enough information is known to reason using first principles?
     
+What about applying first principles to mathematics? Machine learning? AI?
+
+In mathematics, we would think of axioms as our first principles. But often just
+taking the axioms for granted is not good enough. We need intuition, a
+motivation for the abstraction (analogies and math). So the axioms themselves
+need to be grounded in physics / reality, via analogy. This is the way we are
+raised to think. The imagination and intuition can be refined using proofs and
+formalisms, guiding us away from obviously incorrect thinking. Sometimes, in
+mathematics, your axioms are simply not good enough. Having intuition helps you
+recognize when this is the case, and when it's time to think outside of the box
+and create new mathematics.
+
+Kind of ironice, because a physical manifestation of an abstract concept is an
+analogy. But reasoning by analogies is what we're trying to avoid with first
+principle thinking, to avoid being circular. But it's a very particular type of
+analogy, one that's rooted in the modeling of a physical world.
+
+There is a difference between using math and making math. The former can seem
+hard, unapproachable. Like there's a right answer you're trying to get. Making
+math is fun, imaginative. Intuition is not optional. Shuffling symbols around in
+your formalism will quickly get you into trouble. Analogies are our brains
+super-power. That's what it's made to do. Doing math without using analogies is
+like trying to swim without using your arms.
 
 ### Physical Manifestations
   - A natural question is: when breaking a hard problem down into simpler
-    building blocks, what is the simplest thing we can stop at?
+    building blocks, what is the simplest thing we can stop at? What doesn't
+    count as an analogy?
   - This usually depends on you and your domain. For example, many people take
     1+1=2 for granted, as a base truth. (it might not, depending on context.
     tropical semiring)
@@ -34,7 +67,7 @@ nonsense
 
 Might be wrong (dark matter and quantum mechanics etc.) but all models are
 wrong. Good enough for studying and engineering intelligent systems.
-  
+
 ### Practical Uses
   - Often, in higher studies, esoteric terms are used, and often defined in
     terms of other esoteric things which sometimes feels circular. It is useful
@@ -64,8 +97,7 @@ manifested is somewhat philosophically controversial. What about love, language,
 and math? It's not clear how to ground many things in the real world. Sometimes
 there's none, and sometimes there's many different ways. More next time.
     
-    
-## Practical Physicalism: a Philosophy
+## Practical Physicalism: an Apology 
 
 Friend said my views line up with physicalism. Not really
 [physicalism](https://plato.stanford.edu/entries/physicalism/), i don't get any
@@ -110,6 +142,19 @@ wrong because of dark matter, or quantum mechanics or something. But, for the
 purposes of engineering intelligent systems and defining semantics, I think this
 might be sufficient.
 
+- all man can do is move
+  - practical physicalism assumes many things, the prominent ones being:
+  - I can only do two things, fundamentally: observe the world with my
+    senses, and cause my body to move
+  - There exists a world, outside of my brain, that my senses are giving me
+    information about.
+
+So, practical physicalism restricts itself only to things we can observe with
+our senses, and assume that these senses tell us about a coherent, external
+world that would exist even if we did not exist.
+    
+you can consider alternatives, but in my mind, the theory stops being practical.
+
 ### The Copy-World Thought Experiment
 [TODO] Look up physicalists.
 
@@ -130,7 +175,9 @@ might be sufficient.
     just like there's no "correct" way of thinking about a math problem. Sure,
     you're answer still needs to line up with the real world eventually, but
     there's as many ways of getting there as there are analogies you can come up
-    with. When people ask me if I'm "mathematically literate," this is usually actually what I think of. (Although most people mean, do you know arithmetic, calculus, linear algebra, etc.)
+    with. When people ask me if I'm "mathematically literate," this is usually
+    actually what I think of. (Although most people mean, do you know
+    arithmetic, calculus, linear algebra, etc.)
   - Let's do a thought exeperiment: say you wanted to take a snapshot of the
     universe right now, and wanted to recreate it later. What would you need to
     remember?
@@ -147,8 +194,6 @@ might be sufficient.
     world). Average brain circuit. Can define danger in terms of the situations
     that activate the danger brain circuit, causing a person to say the word
     danger.
-    
-    
 
 ### You, a Venus Fly Trap
   - Main point: we have no reason to believe that the stuff inside your head (or
@@ -205,7 +250,7 @@ might be sufficient.
 Ok, enough about souls. Let's talk about ideas now. More next time.
 
 
-## Practical Physicalism: Perspectives on Math and Language
+## Practical Physicalism: Perspectives on Math, Language, and Other Abstract Ideas
     
 - So what is an idea?
   - Ideas and brains are inextricably intertwined.
@@ -216,6 +261,15 @@ Ok, enough about souls. Let's talk about ideas now. More next time.
     connections between things. This is what we mean when two people share an
     idea. "The ocean breeze carressed his face like a gentle lover." (see
     metaphors we live by. all language is fundamentally rooted in metaphor.)
+    
+- There are things that exist in the physical world that aren't directly observable by our senses
+  - But we can still observe their indirect effects
+  - This is where things get tricky
+  - How many indirections is too many?
+  - Everything is connected indirectly? The flap of a butterfly's wings and a
+    tsunami on the other side of the world?
+  - Sure, but it gets harder and harder to disentangle the effects from other
+    things as the connection is more and more indirect.
 
 - How concrete or abstract is an idea?
   - Some ideas seem like they're easier to find physical manifestations for than
