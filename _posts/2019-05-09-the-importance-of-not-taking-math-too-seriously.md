@@ -8,7 +8,7 @@ I used to take math really seriously. As a student, I worried about getting the
 there's nothing wrong with trying to be correct, these feelings really impeded
 my ability to do good math. Anxiety makes it hard to learn new things or see
 things from a different perspective, which is exactly what you need to do
-good math. Instead, I started seeing math as a *creative* endeavor and I figured
+good math. Instead, I started seeing math as a *creative* endeavor, and I figured
 out that I do my best work when I'm having fun.
 
 > You know, for a mathematician, he did not have enough imagination. But he has become a poet and now he is fine.  
@@ -74,3 +74,5 @@ to try crazy ideas.
 But the key thing, again, is playing around. If I ever feel like doing the math
 is a chore, I know I'm going to have a bad time, and that's the only time when math
 ever really feels "hard."
+
+\- Mitchell
