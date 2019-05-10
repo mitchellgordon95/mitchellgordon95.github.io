@@ -51,7 +51,7 @@ systems. What if I hired ten people instead of one? Could I get my answer faster
 How would I have to change my program (schedule), so that everyone works together
 without duplicating work? Is it even possible?
 
-So yeah, next time you teach middleschoolers how to code, try this one. I think
+So yeah, next time you teach middleschoolers how to code, try this analogy. I think
 it's nice.
 
 \- Mitchell
