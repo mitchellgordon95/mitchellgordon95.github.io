@@ -56,9 +56,9 @@ are still indistinguishable. What do we need to copy?
 <h6>Source - <a href="https://www.theonion.com/astronomers-discover-planet-identical-to-earth-with-orb-1819577220">The Onion</a></h6>
 </div>
 
-Well, from high-school chemistry we know that everything in the universe is made
-out of matter, so we'll probably need that. So we can copy all the atoms and
-molecules exactly. You know, the wood molecules stuck together to form your
+Well, from high-school chemistry we might think that everything in the universe
+is made out of matter, so we'll probably need that. So we can copy all the atoms
+and molecules exactly. You know, the wood molecules stuck together to form your
 kitchen table, the oxygen atoms bouncing off your skin, etc.
 
 Is that all we need? Well, I suppose we'll also need to keep track of energy
@@ -88,10 +88,9 @@ Consider: if I make a perfect physical copy of Galileo, but I "forget" the
 abstract plane, it's not like Galileo won't know what a triangle is anymore. His
 brain, which is made out of atoms and neurons, which we copied, will still be
 exactly the same, and Galileo will do his usual Galileo things. He'll still be
-able to walk around, breathe, and talk about triangles. There's no reason to
-believe there's some special property of his brain that would behave differently
-in the presence of an abstract plane. His brain is just a machine, with wet
-cogs. It's just atoms, moving in accordance with the usual laws of physics.[^1]
+able to walk around, breathe, and talk about triangles. **His brain is just a
+machine, with wet cogs. It's just atoms, moving in accordance with the usual
+laws of physics.**[^1]
 
 So the abstract idea of "triangles" doesn't really live in the abstract plane;
 it lives in the physical brains / neural circuits of everyone who knows what a
@@ -100,10 +99,10 @@ triangle is and can name them.
 You can tell I'm kind of waving my hands with the physics here. There's probably
 all sorts of things I've missed (dark matter, quantum effects, etc.). But I'll
 leave the quantum theory to the physicists. For my intents and purposes,
-thinking about brains and stuff, I'll answer with a resounding no, we don't have
-to worry about the abstract plane. 
+thinking about brains and stuff, I'll say no, we don't have to worry about the
+abstract plane.
 
-## Practical Physicalism
+## Observational Physicalism
 
 So what's the alternative? How should we think about abstract things? Ideally,
 any new idea we encounter should be broken down in terms of our existing model
@@ -123,65 +122,54 @@ common-sense to them.
 But what should that core set be? For me, talking about brains and happiness and
 stuff, classical physics is good enough. At the end of the day, everything that
 matters to me can be conceptualized as groups of atoms or the movement of atoms
-over time. This is very close to Stephen Wolfram's [new kind of
-science](https://www.wolframscience.com/nks/), where everything in the natural
-world can be viewed as a mechanistic computation. The universe is a machine,
-whose parts follow some basic rules through time. It's also very close to the
-philosophy of [physicalism](https://plato.stanford.edu/entries/physicalism/),
-which asserts that everything is physically manifested.
+over time. This is very close to the philosophy of
+[physicalism](https://plato.stanford.edu/entries/physicalism/) or [material
+reductionism](http://www.pbs.org/faithandreason/gengloss/reduc-body.html), which
+asserts that *everything* can be thought of as being composed of atoms and
+molecules.
 
-Physicalism makes some bold claims about *everything*, which I can't really
-support. Instead, I use what I've been calling **Practical Physicalism**:
-everything that matters *to me* must be physically manifested. Here's a simple
-litmus test for whether something is physically manifested:
-
-Can you touch it, see it, or otherwise sense it? If not, could you
-theoretically build a device that would let you measure / observe it
-indirectly? If so, that thing is physically manifested and worth discussing.
+I'm not sure that *everything* is physical. Instead, I use what I've been
+calling **Observational Physicalism**: everything that matters *to me* must be
+observable somehow with my senses. This means either directly observable (with
+my eyes and ears) or indirectly observable (with an instrument, like a
+telescope).
 
 <div style="text-align: center">
 <img  widht="200px" height="200px" src="{{'/assets/telescope.jpg' | absolute_url }}">
 <h6>Source - <a href="https://www.pinterest.com/pin/373376625333051908/">Pinterest</a></h6>
 </div>
 
-
-It's a very practical definition, hence the name. And to me, it makes a lot of
-sense. If something is truly "abstract," and you can never see it, touch it, or
+If something is truly "abstract," and you can never see it, touch it, or
 observe it, even indirectly or theoretically... if it never impacts your world,
 even minutely, then why should you care about it? If something is truly
 abstract, it's not worth discussing, because it will never impact any event in
 your life.
 
-This forces us to define abstract things concretely, in terms of physics, rather
-than letting them be some ethereal non-existence. Even if the only physical
-manifestation is some esoteric neural circuit in your brain, that can't be
-observed any other way than cracking open your skull and measuring the
-electrical potentials. 
+So the only reasonable way to talk about abstract things is in terms of their
+observable, physical manifestations. After all, that's all we have to work with,
+living in our human bodies. Spending time trying to rationalize what may or may
+not go on in the abstract plane that has no grounding in physical reality is
+madness.
 
-<div style="text-align: center">
-<img  widht="200px" height="200px" src="{{'/assets/concreteness_dog.png' | absolute_url }}">
-<h6>Source - <a href="https://www.aclweb.org/anthology/N18-1199">Quantifying the visual concreteness of words and topics
-in multimodal datasets</a></h6>
-</div>
+This really freed my thinking about math. I realized what made a mathematical
+proof valid wasn't some inherent, objective property of the abstract plane... it
+depended on whether or not the person reading the proof was convinced. The
+observable physical manifestations of math are the paper, the pencil, and the
+neural circuitry of the person doing the math. If we think about math as a
+physical process (the firing of neurons), we can bring it into our grand
+scientific theory of How Things Work and make sense of it.[^2] Much more on this
+(and its connection with language) later.
 
-It also allows us to start thinking about *how* concrete or abstract things are.
-For example, check out [this paper](https://www.aclweb.org/anthology/N18-1199)
-on operationalizing and quantifying "abstract-ness" and "concreteness" for
-specific machine learning datasets that are grounded in pictures. That might
-help us solve our "happiness" problem.
-
-
-So I've said that this way of thinking has really helped me come to terms with
-math and language, but I haven't said *how*. That's a longer discussion, so I
-think I'll save it for another post. 
 > All models are wrong, but some are useful. - George Box
 
-And yes, all models are wrong. But I think this model of thinking is very useful,
-especially in a field like machine learning and natural language processing where
-all we do is think about thinking. Dispelling the "abstract plane" idea early on
-will benefit everyone, I think.
+And yes, all models are wrong. But I think this model of thinking is very
+useful, especially in a field like machine learning and natural language
+processing where all we do is think about thinking. 
 
 \- Mitchell
+
+Update (5/31/19): Replace "Practical Physicalism" with "Observational
+Physicalism" and clean up some things.
 
 ---
 
@@ -193,3 +181,6 @@ will benefit everyone, I think.
     the physics textbooks. My problem isn't the existence or non-existence of
     the abstract plane, but its usage as an excuse to do lazy science /
     engineering.
+
+[^2]: It also makes it much easier to call BS on "purely theoretical" math that
+    might only ever be observable in the neurons of the people who practice it.
