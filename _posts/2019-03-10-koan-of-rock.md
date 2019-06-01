@@ -11,4 +11,4 @@ The student took a step to the left.
 
 The master was pleased.
 
-\- 金道
+

@@ -21,4 +21,4 @@ The student asked the master, "why has he done this?"
 
 "It does not matter. He is dead now."
 
-\- 金道 
+ 

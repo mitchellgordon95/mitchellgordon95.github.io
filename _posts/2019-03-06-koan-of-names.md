@@ -25,4 +25,4 @@ The master then chopped the ball into many pieces, until it became dust and diss
 
 "Names are useful, but they are not truth. The names you create are your ignorance of the world."
 
-\- 金道
+

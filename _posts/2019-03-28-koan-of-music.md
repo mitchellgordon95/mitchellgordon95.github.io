@@ -25,4 +25,4 @@ In a fury, the student smashed the lute on the ground repeatedly, making a great
 
 The student was enlightened.
 
-\- 金道
+
