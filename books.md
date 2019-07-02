@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Books
+title: Bookshelf
 permalink: /books/
 ---
-I'm just going to drop these here and maybe organize / talk about some of these later.
+Books I own or have read (and am not embarrased I have read.) Similar to [Patrick Colison's bookshelf](https://patrickcollison.com/bookshelf).
 
 [Predictably Irrational](https://amzn.to/2XCh3LH) - Dan Ariely
 
@@ -26,5 +26,9 @@ I'm just going to drop these here and maybe organize / talk about some of these 
 
 An introduction to information theory; symbols, signals, and noise - Pierce
 
-MIT Strang's Introduction to Linear Algebra
+MIT Strang's Introduction to Linear Algebra 
 (and associated lectures 2005)
+
+[Chaos](https://www.amazon.com/Chaos-Making-Science-James-Gleick/dp/0143113453) - James Gleick
+
+[Arithmetic](https://www.amazon.com/Arithmetic-Paul-Lockhart/dp/0674972236) - Paul Lockhart
