@@ -3,7 +3,11 @@ layout: page
 title: Bookshelf
 permalink: /books/
 ---
-Books I own or have read (and am not embarrased I have read.) Similar to [Patrick Colison's bookshelf](https://patrickcollison.com/bookshelf).
+
+Books I own or have read (and am not embarrased I have read,) in no particular
+order. Similar to [Patrick Colison's
+bookshelf](https://patrickcollison.com/bookshelf) and [Bret Victor's
+bookshelf](http://worrydream.com/#!/Links).
 
 [Predictably Irrational](https://amzn.to/2XCh3LH) - Dan Ariely
 
@@ -32,3 +36,5 @@ MIT Strang's Introduction to Linear Algebra
 [Chaos](https://www.amazon.com/Chaos-Making-Science-James-Gleick/dp/0143113453) - James Gleick
 
 [Arithmetic](https://www.amazon.com/Arithmetic-Paul-Lockhart/dp/0674972236) - Paul Lockhart
+
+[Metaphors We Live By](https://www.amazon.com/Metaphors-We-Live-George-Lakoff/dp/0226468011) - Lakoff and Johnson
