@@ -50,7 +50,7 @@ But if (I assume) thought is physical, then (I have to assume) everything else
 > \- Immanuel Kant, [Critique of Pure Reason](https://en.wikipedia.org/wiki/Critique_of_Pure_Reason)
 
 But how do you define math and logic
-  [operationally](https://en.wikipedia.org/wiki/Operational_definition), in
+  [operationally]({% post_url 2019-06-01-non-operational-words %}), in
   terms of base senses? After all, the point is that "math is true." People
   believe in math the same way they believe in God: it exists on some
   higher-plane of existence, and it's authoritative. You start with
@@ -100,7 +100,7 @@ But how should my "thinking machine" construct axioms or apply proven theorems
 I think about "metaphor" as the building block for this operation.
   Specifically, metaphor as described by [Lakoff and
   Johnson](https://www.amazon.com/Metaphors-We-Live-George-Lakoff/dp/0226468011),
-  which I've talked about [before]({% post_url 2019-07-18-empiricism-in-math-and-ai %}).
+  which I've talked about [before]({% post_url 2019-06-25-metaphors-of-arithmetic %}).
   
 In [their model](http://theliterarylink.com/metaphors.html), everything starts
   with basic senses. And as we live, we learn to associate certain experiences
