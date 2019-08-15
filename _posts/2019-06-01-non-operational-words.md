@@ -153,7 +153,7 @@ words. We need everyone to be on the same page, so we know what's Gucci and
 what's not. The abortion issue is centered around this: trying to operationalize
 when a fetus becomes a human. I'm not saying operationalizing will fix this
 problem; indeed it is the problem. But you can see how it's necessary to gain
-concensus about what ought to be done.
+concensus about what ought to be done.[^3]
 
 > I don't know enough about X to operationalize my words.
 
@@ -260,3 +260,8 @@ step closer to everyone getting on the same page.
     surprising based on what usually appears on public television, social media,
     etc. Then we could short-cut the vote and make a prediction. Now that's
     science.
+
+[^3]: Apparently this is a favorite technique of [Ben
+    Shapiro](https://youtu.be/JY5t6iUzajk?t=220) while debating. Forcing a
+    debate partner to get precise and specific about definitions can obliterate
+    generalized arguments that aren't grounded in reality.
