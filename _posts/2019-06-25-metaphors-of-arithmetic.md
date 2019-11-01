@@ -51,12 +51,14 @@ function divide(num) {
     }
 }
 
-var parts = 1;
-setInterval(function(){
+var parts = 3;
+function paint(){
     if (parts < 300) {
       divide(parts); parts = parts + 1;
     }
-}, 1000)
+  }
+paint()
+setInterval(paint, 1000)
 </script>
 
 <div style="text-align: center">
