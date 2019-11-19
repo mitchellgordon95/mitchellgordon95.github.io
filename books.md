@@ -34,6 +34,7 @@ MIT Strang's Introduction to Linear Algebra
 (and associated lectures 2005)
 
 [Chaos](https://www.amazon.com/Chaos-Making-Science-James-Gleick/dp/0143113453) - James Gleick
+[The Information](https://www.amazon.com/Information-History-Theory-Flood/dp/1400096235) - James Gleick
 
 [Arithmetic](https://www.amazon.com/Arithmetic-Paul-Lockhart/dp/0674972236) - Paul Lockhart
 
