@@ -66,3 +66,16 @@ downstream tasks. Others compress BERT in a way that is task-agnostic.
 | [MobileBERT: Task-Agnostic Compression of BERT by Progressive Knowledge Transfer](https://openreview.net/forum?id=SJxjVaNKwB)       |          |               | &#x2611;               |                |              | &#x2611;  |            |
 | [Q8BERT: Quantized 8Bit BERT](http://arxiv.org/abs/1910.06188)                                                                      |          |               |                        |                | &#x2611;     |           | &#x2611;   |
 | [Q-BERT: Hessian Based Ultra Low Precision Quantization of BERT](http://arxiv.org/abs/1909.05840)                                   |          |               |                        |                | &#x2611;     |           | &#x2611;   |
+
+<a href="{{'/assets/bert_compression.bib' | absolute_url}}">Bibtex</a>
+
+# Bonus Papers
+
+[Sparse Transformer: Concentrated Attention Through Explicit Selection](https://openreview.net/forum?id=Hye87grYDH)
+
+[Lightweight and Efficient Neural Natural Language Processing with Quaternion
+Networks](http://arxiv.org/abs/1906.04393)
+
+[Adaptively Sparse Transformers](https://www.semanticscholar.org/paper/f6390beca54411b06f3bde424fb983a451789733)
+
+Update 11/19/19: Bibtex and bonus papers
