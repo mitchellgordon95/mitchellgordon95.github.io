@@ -69,7 +69,7 @@ downstream tasks. Others compress BERT in a way that is task-agnostic.
 
 <a href="{{'/assets/bert_compression.bib' | absolute_url}}">Bibtex</a>
 
-# Bonus Papers
+# Bonus Papers / Blog Posts
 
 [Sparse Transformer: Concentrated Attention Through Explicit Selection](https://openreview.net/forum?id=Hye87grYDH)
 
@@ -77,5 +77,7 @@ downstream tasks. Others compress BERT in a way that is task-agnostic.
 Networks](http://arxiv.org/abs/1906.04393)
 
 [Adaptively Sparse Transformers](https://www.semanticscholar.org/paper/f6390beca54411b06f3bde424fb983a451789733)
+
+[Compressing BERT for Faster Prediction](https://blog.rasa.com/compressing-bert-for-faster-prediction-2/amp/)
 
 Update 11/19/19: Bibtex and bonus papers
