@@ -99,6 +99,10 @@ font-size: 10px;
   <td>          </td> <td>               </td> <td> &#x2611;               </td> <td>                </td> <td>              </td> <td> &#x2611;  </td> <td>            </td>
 </tr>
 <tr>
+  <td> <a href="https://arxiv.org/abs/1903.12136">Distilling Task-Specific Knowledge from BERT into Simple Neural Networks</a>                 </td>
+  <td>          </td> <td>               </td> <td> &#x2611;               </td> <td>                </td> <td>              </td> <td>           </td> <td> &#x2611;   </td>
+</tr>
+<tr>
   <td> <a href="http://arxiv.org/abs/1910.01769">Distilling Transformers into Simple Neural Networks with Unlabeled Transfer Data</a>                 </td>
   <td>          </td> <td>               </td> <td> &#x2611;               </td> <td>                </td> <td>              </td> <td>           </td> <td> &#x2611;   </td>
 </tr>
