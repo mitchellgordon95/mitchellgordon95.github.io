@@ -47,27 +47,84 @@ downstream tasks. Others compress BERT in a way that is task-agnostic.
 
 ## Papers
 
-| Paper                                                                                                                               | Pruning  | Factorization | Knowledge Distillation | Weight Sharing | Quantization | Pre-train | Downstream |
-| [Compressing BERT: Studying the Effects of Weight Pruning on Transfer Learning](https://openreview.net/forum?id=SJlPOCEKvH)         | &#x2611; |               |                        |                |              | &#x2611;  | &#x2611;   |
-| [Are Sixteen Heads Really Better than One?](http://arxiv.org/abs/1905.10650)                                                        | &#x2611; |               |                        |                |              |           | &#x2611;   |
-| [Pruning a BERT-based Question Answering Model](http://arxiv.org/abs/1910.06360)                                                    | &#x2611; |               |                        |                |              |           | &#x2611;   |
-| [Reducing Transformer Depth on Demand with Structured Dropout](https://openreview.net/forum?id=SylO2yStDr)                          | &#x2611; |               |                        |                |              | &#x2611;  |            |
-| Paper                                                                                                                               | Pruning  | Factorization | Knowledge Distillation | Weight Sharing | Quantization | Pre-train | Downstream |
-| [Reweighted Proximal Pruning for Large-Scale Language Representation](https://openreview.net/forum?id=r1gBOxSFwr&noteId=r1gBOxSFwr) | &#x2611; |               |                        |                |              | &#x2611;  |            |
-| [Structured Pruning of Large Language Models](http://arxiv.org/abs/1910.04732)                                                      |          | &#x2611;      |                        |                |              |           | &#x2611;   |
-| [ALBERT: A Lite BERT for Self-supervised Learning of Language Representations](https://openreview.net/forum?id=H1eA7AEtvS)          |          | &#x2611;      |                        | &#x2611;       |              | &#x2611;  |            |
-| [Extreme Language Model Compression with Optimal Subwords and Shared Projections](https://openreview.net/forum?id=S1x6ueSKPr)       |          |               | &#x2611;               |                |              | &#x2611;  |            |
-| Paper                                                                                                                               | Pruning  | Factorization | Knowledge Distillation | Weight Sharing | Quantization | Pre-train | Downstream |
-| [DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](http://arxiv.org/abs/1910.01108)                    |          |               | &#x2611;               |                |              | &#x2611;  |            |
-| [Distilling Transformers into Simple Neural Networks with Unlabeled Transfer Data](http://arxiv.org/abs/1910.01769)                 |          |               | &#x2611;               |                |              |           | &#x2611;   |
-| [Patient Knowledge Distillation for BERT Model Compression](http://arxiv.org/abs/1908.09355)                                        |          |               | &#x2611;               |                |              |           | &#x2611;   |
-| [TinyBERT: Distilling BERT for Natural Language Understanding](https://openreview.net/forum?id=rJx0Q6EFPB)                          |          |               | &#x2611;               |                |              | &#x2611;  | &#x2611;   |
-| Paper                                                                                                                               | Pruning  | Factorization | Knowledge Distillation | Weight Sharing | Quantization | Pre-train | Downstream |
-| [MobileBERT: Task-Agnostic Compression of BERT by Progressive Knowledge Transfer](https://openreview.net/forum?id=SJxjVaNKwB)       |          |               | &#x2611;               |                |              | &#x2611;  |            |
-| [Q8BERT: Quantized 8Bit BERT](http://arxiv.org/abs/1910.06188)                                                                      |          |               |                        |                | &#x2611;     |           | &#x2611;   |
-| [Q-BERT: Hessian Based Ultra Low Precision Quantization of BERT](http://arxiv.org/abs/1909.05840)                                   |          |               |                        |                | &#x2611;     |           | &#x2611;   |
-
 <a href="{{'/assets/bert_compression.bib' | absolute_url}}">Bibtex</a>
+
+<style>
+table {
+font-size: 10px;
+}
+</style>
+
+<table>
+
+
+<tr>
+  <th style="width: 300px"> Paper                                                                                                                               </th>
+  <th> Prune </th> <th> Factor </th> <th> Distill </th> <th> W. Sharing </th> <th> Quant. </th> <th> Pre-train </th> <th> Downstream </th>
+</tr>
+<tr>
+  <td> <a href="https://openreview.net/forum?id=SJlPOCEKvH">Compressing BERT: Studying the Effects of Weight Pruning on Transfer Learning</a>         </td>
+  <td> &#x2611; </td> <td>               </td> <td>                        </td> <td>                </td> <td>              </td> <td> &#x2611;  </td> <td> &#x2611;   </td>
+</tr>
+<tr>
+  <td> <a href="http://arxiv.org/abs/1905.10650">Are Sixteen Heads Really Better than One?</a>                                                        </td>
+  <td> &#x2611; </td> <td>               </td> <td>                        </td> <td>                </td> <td>              </td> <td>           </td> <td> &#x2611;   </td>
+</tr>
+<tr>
+  <td> <a href="http://arxiv.org/abs/1910.06360">Pruning a BERT-based Question Answering Model</a>                                                    </td>
+  <td> &#x2611; </td> <td>               </td> <td>                        </td> <td>                </td> <td>              </td> <td>           </td> <td> &#x2611;   </td>
+</tr>
+<tr>
+  <td> <a href="https://openreview.net/forum?id=SylO2yStDr">Reducing Transformer Depth on Demand with Structured Dropout</a>                          </td>
+  <td> &#x2611; </td> <td>               </td> <td>                        </td> <td>                </td> <td>              </td> <td> &#x2611;  </td> <td>            </td>
+</tr>
+<tr>
+  <td> <a href="https://openreview.net/forum?id=r1gBOxSFwr&noteId=r1gBOxSFwr">Reweighted Proximal Pruning for Large-Scale Language Representation</a> </td>
+  <td> &#x2611; </td> <td>               </td> <td>                        </td> <td>                </td> <td>              </td> <td> &#x2611;  </td> <td>            </td>
+</tr>
+<tr>
+  <td> <a href="http://arxiv.org/abs/1910.04732">Structured Pruning of Large Language Models</a>                                                      </td>
+  <td>          </td> <td> &#x2611;      </td> <td>                        </td> <td>                </td> <td>              </td> <td>           </td> <td> &#x2611;   </td>
+</tr>
+<tr>
+  <td> <a href="https://openreview.net/forum?id=H1eA7AEtvS">ALBERT: A Lite BERT for Self-supervised Learning of Language Representations</a>          </td>
+  <td>          </td> <td> &#x2611;      </td> <td>                        </td> <td> &#x2611;       </td> <td>              </td> <td> &#x2611;  </td> <td>            </td>
+</tr>
+<tr>
+  <td> <a href="https://openreview.net/forum?id=S1x6ueSKPr">Extreme Language Model Compression with Optimal Subwords and Shared Projections</a>       </td>
+  <td>          </td> <td>               </td> <td> &#x2611;               </td> <td>                </td> <td>              </td> <td> &#x2611;  </td> <td>            </td>
+</tr>
+<tr>
+  <td> <a href="http://arxiv.org/abs/1910.01108">DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter</a>                    </td>
+  <td>          </td> <td>               </td> <td> &#x2611;               </td> <td>                </td> <td>              </td> <td> &#x2611;  </td> <td>            </td>
+</tr>
+<tr>
+  <td> <a href="http://arxiv.org/abs/1910.01769">Distilling Transformers into Simple Neural Networks with Unlabeled Transfer Data</a>                 </td>
+  <td>          </td> <td>               </td> <td> &#x2611;               </td> <td>                </td> <td>              </td> <td>           </td> <td> &#x2611;   </td>
+</tr>
+<tr>
+  <td> <a href="http://arxiv.org/abs/1908.09355">Patient Knowledge Distillation for BERT Model Compression</a>                                        </td>
+  <td>          </td> <td>               </td> <td> &#x2611;               </td> <td>                </td> <td>              </td> <td>           </td> <td> &#x2611;   </td>
+</tr>
+<tr>
+  <td> <a href="https://openreview.net/forum?id=rJx0Q6EFPB">TinyBERT: Distilling BERT for Natural Language Understanding</a>                          </td>
+  <td>          </td> <td>               </td> <td> &#x2611;               </td> <td>                </td> <td>              </td> <td> &#x2611;  </td> <td> &#x2611;   </td>
+</tr>
+<tr>
+  <td> <a href="https://openreview.net/forum?id=SJxjVaNKwB">MobileBERT: Task-Agnostic Compression of BERT by Progressive Knowledge Transfer</a>       </td>
+  <td>          </td> <td>               </td> <td> &#x2611;               </td> <td>                </td> <td>              </td> <td> &#x2611;  </td> <td>            </td>
+</tr>
+<tr>
+  <td> <a href="http://arxiv.org/abs/1910.06188">Q8BERT: Quantized 8Bit BERT</a>                                                                      </td>
+  <td>          </td> <td>               </td> <td>                        </td> <td>                </td> <td> &#x2611;     </td> <td>           </td> <td> &#x2611;   </td>
+</tr>
+<tr>
+  <td> <a href="http://arxiv.org/abs/1909.05840">Q-BERT: Hessian Based Ultra Low Precision Quantization of BERT</a>                                   </td>
+  <td>          </td> <td>               </td> <td>                        </td> <td>                </td> <td> &#x2611;     </td> <td>           </td> <td> &#x2611;   </td>
+</tr>
+</table>
+
+
 
 # Bonus Papers / Blog Posts
 
