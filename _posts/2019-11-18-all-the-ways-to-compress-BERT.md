@@ -107,6 +107,10 @@ font-size: 10px;
   <td>          </td> <td>               </td> <td> &#x2611;               </td> <td>                </td> <td>              </td> <td>           </td> <td> &#x2611;   </td>
 </tr>
 <tr>
+  <td> <a href="https://arxiv.org/abs/1911.03588">Attentive Student Meets Multi-Task Teacher: Improved Knowledge Distillation for Pretrained Models</a>                 </td>
+  <td>          </td> <td>               </td> <td> &#x2611;               </td> <td>                </td> <td>              </td> <td> Multi-task      </td> <td> &#x2611;   </td>
+</tr>
+<tr>
   <td> <a href="http://arxiv.org/abs/1908.09355">Patient Knowledge Distillation for BERT Model Compression</a>                                        </td>
   <td>          </td> <td>               </td> <td> &#x2611;               </td> <td>                </td> <td>              </td> <td>           </td> <td> &#x2611;   </td>
 </tr>
@@ -192,11 +196,15 @@ so maybe check out those, too.
 </tr>
 <tr>
   <td> <a href="https://arxiv.org/abs/1903.12136">Distilling Task-Specific Knowledge from BERT into Simple Neural Networks</a>                 </td>
-  <td> 99% </td> <td> params </td> <td> 15x </td> <td> ELMO equiv. </td> <td> Distills into Bi-LSTMS </td>
+  <td> 99% </td> <td> params </td> <td> 15x </td> <td> ELMO equiv. </td> <td> Distills into Bi-LSTMs </td>
 </tr>
 <tr>
-  <td> <a href="http://arxiv.org/abs/1910.01769">Distilling Transformers into Simple Neural Networks with Unlabeled Transfer Data</a>                 </td>
+  <td> <a href="https://arxiv.org/abs/1911.03588">Distilling Transformers into Simple Neural Networks with Unlabeled Transfer Data</a>                 </td>
   <td> 96% </td> <td> params </td> <td> ? </td> <td> ? </td> <td> Low-resource only </td>
+</tr>
+<tr>
+  <td> <a href="https://arxiv.org/abs/1911.03588">Attentive Student Meets Multi-Task Teacher: Improved Knowledge Distillation for Pretrained Models</a>                 </td>
+  <td> 90% </td> <td> params </td> <td> 14x </td> <td> better than Tang^ </td> <td> Distills into BiLSTMs. </td>
 </tr>
 <tr>
   <td> <a href="http://arxiv.org/abs/1908.09355">Patient Knowledge Distillation for BERT Model Compression</a>                                        </td>
@@ -236,3 +244,5 @@ Networks](http://arxiv.org/abs/1906.04393)
 Update 11/19/19: Bibtex and bonus papers
 
 Update 11/24/19: Added section with comparison of results
+
+Update 11/25/19: Added "Attentive Student Meets..."
