@@ -1,0 +1,443 @@
+@INPROCEEDINGS{Haeffele2017-qg,
+  title     = "Global optimality in neural network training",
+  booktitle = "Proceedings of the {IEEE} Conference on Computer Vision and
+               Pattern Recognition",
+  author    = "Haeffele, Benjamin D and Vidal, Ren{\'e}",
+  pages     = "7331--7339",
+  year      =  2017
+}
+
+@MISC{Tesla2019-ts,
+  title        = "Loss Surfaces, Mode Connectivity, and Fast Ensembling of
+                  {DNNs}",
+  booktitle    = "Pavel's Blog",
+  author       = "Tesla, Nikola",
+  abstract     = "Loss Surfaces, Mode Connectivity, and Fast Ensembling of DNNs
+                  Figure 1: visualizat",
+  month        =  nov,
+  year         =  2019,
+  howpublished = "\url{https://example.com/pages/pavels-post/}",
+  note         = "Accessed: 2020-1-7"
+}
+
+@ARTICLE{Khalil2016-vw,
+  title    = "Binarized Neural Networks",
+  author   = "Khalil, Elias Boutros and Gupta, Amrita and Dilkina, Bistra N",
+  abstract = "Binarized Neural Networks (BNNs) have recently attracted
+              significant interest due to their computational efficiency.
+              Concurrently, it has been shown that neural networks may be
+              overly sensitive to ``attacks'' -- tiny adversarial changes in
+              the input -- which may be detrimental to their use in
+              safety-critical domains. Designing attack algorithms that
+              effectively fool trained models is a key step towards learning
+              robust neural networks. The discrete, non-differentiable nature
+              of BNNs, which distinguishes them from their full-precision
+              counterparts, poses a challenge to gradient-based attacks. In
+              this work, we study the problem of attacking a BNN through the
+              lens of combinatorial and integer optimization. We propose a
+              Mixed Integer Linear Programming (MILP) formulation of the
+              problem. While exact and flexible, the MILP quickly becomes
+              intractable as the network and perturbation space grow. To
+              address this issue, we propose IProp, a decomposition-based
+              algorithm that solves a sequence of much smaller MILP problems.
+              Experimentally, we evaluate both proposed methods against the
+              standard gradient-based attack (PGD) on MNIST and Fashion-MNIST,
+              and show that IProp performs favorably compared to PGD, while
+              scaling beyond the limits of the MILP.",
+  journal  = "ArXiv",
+  year     =  2016
+}
+
+@ARTICLE{Suzuki2019-gs,
+  title    = "Compression based bound for non-compressed network: unified
+              generalization error analysis of large compressible deep neural
+              network",
+  author   = "Suzuki, Taiji",
+  abstract = "One of biggest issues in deep learning theory is its
+              generalization ability despite the huge model size. The classical
+              learning theory suggests that overparameterized models cause
+              overfitting. However, practically used large deep models avoid
+              overfitting, which is not well explained by the classical
+              approaches. To resolve this issue, several attempts have been
+              made. Among them, the compression based bound is one of the
+              promising approaches. However, the compression based bound can be
+              applied only to a compressed network, and it is not applicable to
+              the non-compressed original network. In this paper, we give a
+              unified frame-work that can convert compression based bounds to
+              those for non-compressed original networks. The bound gives even
+              better rate than the one for the compressed network by improving
+              the bias term. By establishing the unified frame-work, we can
+              obtain a data dependent generalization error bound which gives a
+              tighter evaluation than the data independent ones.",
+  journal  = "ArXiv",
+  year     =  2019
+}
+
+@ARTICLE{Arora2018-qg,
+  title         = "Stronger generalization bounds for deep nets via a
+                   compression approach",
+  author        = "Arora, Sanjeev and Ge, Rong and Neyshabur, Behnam and Zhang,
+                   Yi",
+  abstract      = "Deep nets generalize well despite having more parameters
+                   than the number of training samples. Recent works try to
+                   give an explanation using PAC-Bayes and Margin-based
+                   analyses, but do not as yet result in sample complexity
+                   bounds better than naive parameter counting. The current
+                   paper shows generalization bounds that're orders of
+                   magnitude better in practice. These rely upon new succinct
+                   reparametrizations of the trained net --- a compression that
+                   is explicit and efficient. These yield generalization bounds
+                   via a simple compression-based framework introduced here.
+                   Our results also provide some theoretical justification for
+                   widespread empirical success in compressing deep nets.
+                   Analysis of correctness of our compression relies upon some
+                   newly identified \textbackslashtextquotedblleft noise
+                   stability\textbackslashtextquotedblright properties of
+                   trained deep nets, which are also experimentally verified.
+                   The study of these properties and resulting generalization
+                   bounds are also extended to convolutional nets, which had
+                   eluded earlier attempts on proving generalization.",
+  month         =  feb,
+  year          =  2018,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "1802.05296"
+}
+
+@ARTICLE{Nguyen2019-de,
+  title         = "Benefits of Jointly Training Autoencoders: An Improved
+                   Neural Tangent Kernel Analysis",
+  author        = "Nguyen, Thanh V and Wong, Raymond K W and Hegde, Chinmay",
+  abstract      = "A remarkable recent discovery in machine learning has been
+                   that deep neural networks can achieve impressive performance
+                   (in terms of both lower training error and higher
+                   generalization capacity) in the regime where they are
+                   massively over-parameterized. Consequently, over the last
+                   several months, the community has devoted growing interest
+                   in analyzing optimization and generalization properties of
+                   over-parameterized networks, and several breakthrough works
+                   have led to important theoretical progress. However, the
+                   majority of existing work only applies to supervised
+                   learning scenarios and hence are limited to settings such as
+                   classification and regression. In contrast, the role of
+                   over-parameterization in the unsupervised setting has gained
+                   far less attention. In this paper, we study the gradient
+                   dynamics of two-layer over-parameterized autoencoders with
+                   ReLU activation. We make very few assumptions about the
+                   given training dataset (other than mild non-degeneracy
+                   conditions). Starting from a randomly initialized
+                   autoencoder network, we rigorously prove the linear
+                   convergence of gradient descent in two learning regimes,
+                   namely: (i) the weakly-trained regime where only the encoder
+                   is trained, and (ii) the jointly-trained regime where both
+                   the encoder and the decoder are trained. Our results
+                   indicate the considerable benefits of joint training over
+                   weak training for finding global optima, achieving a
+                   dramatic decrease in the required level of
+                   over-parameterization. We also analyze the case of
+                   weight-tied autoencoders (which is a commonly used
+                   architectural choice in practical settings) and prove that
+                   in the over-parameterized setting, training such networks
+                   from randomly initialized points leads to certain unexpected
+                   degeneracies.",
+  month         =  nov,
+  year          =  2019,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "1911.11983"
+}
+
+@ARTICLE{Neyshabur2018-ow,
+  title         = "Towards Understanding the Role of {Over-Parametrization} in
+                   Generalization of Neural Networks",
+  author        = "Neyshabur, Behnam and Li, Zhiyuan and Bhojanapalli, Srinadh
+                   and LeCun, Yann and Srebro, Nathan",
+  abstract      = "Despite existing work on ensuring generalization of neural
+                   networks in terms of scale sensitive complexity measures,
+                   such as norms, margin and sharpness, these complexity
+                   measures do not offer an explanation of why neural networks
+                   generalize better with over-parametrization. In this work we
+                   suggest a novel complexity measure based on unit-wise
+                   capacities resulting in a tighter generalization bound for
+                   two layer ReLU networks. Our capacity bound correlates with
+                   the behavior of test error with increasing network sizes,
+                   and could potentially explain the improvement in
+                   generalization with over-parametrization. We further present
+                   a matching lower bound for the Rademacher complexity that
+                   improves over previous capacity lower bounds for neural
+                   networks.",
+  month         =  may,
+  year          =  2018,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "1805.12076"
+}
+
+@ARTICLE{Zou2019-eh,
+  title    = "Gradient descent optimizes over-parameterized deep {ReLU}
+              networks",
+  author   = "Zou, Difan and Cao, Yuan and Zhou, Dongruo and Gu, Quanquan",
+  abstract = "We study the problem of training deep fully connected neural
+              networks with Rectified Linear Unit (ReLU) activation function
+              and cross entropy loss function for binary classification using
+              gradient descent. We show that with proper random weight
+              initialization, gradient descent can find the global minima of
+              the training loss for an over-parameterized deep ReLU network,
+              under certain assumption on the training data. The key idea of
+              our proof is that Gaussian random initialization followed by
+              gradient descent produces a sequence of iterates that stay inside
+              a small perturbation region centered at the initial weights, in
+              which the training loss function of the deep ReLU networks enjoys
+              nice local curvature properties that ensure the global
+              convergence of gradient descent. At the core of our proof
+              technique is (1) a milder assumption on the training data; (2) a
+              sharp analysis of the trajectory length for gradient descent; and
+              (3) a finer characterization of the size of the perturbation
+              region. Compared with the concurrent work (Allen-Zhu et al. in A
+              convergence theory for deep learning via over-parameterization,
+              2018a; Du et al. in Gradient descent finds global minima of deep
+              neural networks, 2018a) along this line, our result relies on
+              milder over-parameterization condition on the neural network
+              width, and enjoys faster global convergence rate of gradient
+              descent for training deep neural networks.",
+  journal  = "Mach. Learn.",
+  volume   =  29,
+  pages    = "82",
+  month    =  oct,
+  year     =  2019
+}
+
+@ARTICLE{Frei2019-py,
+  title    = "{Algorithm-Dependent} Generalization Bounds for Overparameterized
+              Deep Residual Networks",
+  author   = "Frei, Spencer and Cao, Yuan and Gu, Quanquan",
+  abstract = "The skip-connections used in residual networks have become a
+              standard architecture choice in deep learning due to the
+              increased training stability and generalization performance with
+              this architecture, although there has been limited theoretical
+              understanding for this improvement. In this work, we analyze
+              overparameterized deep residual networks trained by gradient
+              descent following random initialization, and demonstrate that (i)
+              the class of networks learned by gradient descent constitutes a
+              small subset of the entire neural network function class, and
+              (ii) this subclass of networks is sufficiently large to guarantee
+              small training error. By showing (i) we are able to demonstrate
+              that deep residual networks trained with gradient descent have a
+              small generalization gap between training and test error, and
+              together with (ii) this guarantees that the test error will be
+              small. Our optimization and generalization guarantees require
+              overparameterization that is only logarithmic in the depth of the
+              network, while all known generalization bounds for deep
+              non-residual networks have overparameterization requirements that
+              are at least polynomial in the depth. This provides an
+              explanation for why residual networks are preferable to
+              non-residual ones.",
+  journal  = "NeurIPS 2019",
+  year     =  2019
+}
+
+@ARTICLE{Ge2019-ks,
+  title    = "Mildly Overparametrized Neural Nets can Memorize Training Data
+              Efficiently",
+  author   = "Ge, Rong and Wang, Runzhe and Zhao, Haoyu",
+  abstract = "It has been observed
+              \textbackslashcitep\{zhang2016understanding\} that deep neural
+              networks can memorize: they achieve 100\% accuracy on training
+              data. Recent theoretical results explained such behavior in
+              highly overparametrized regimes, where the number of neurons in
+              each layer is larger than the number of training samples. In this
+              paper, we show that neural networks can be trained to memorize
+              training data perfectly in a mildly overparametrized regime,
+              where the number of parameters is just a constant factor more
+              than the number of training samples, and the number of neurons is
+              much smaller.",
+  journal  = "ArXiv",
+  year     =  2019
+}
+
+@ARTICLE{Ji2019-xi,
+  title    = "Polylogarithmic width suffices for gradient descent to achieve
+              arbitrarily small test error with shallow {ReLU} networks",
+  author   = "Ji, Ziwei and Telgarsky, Matus",
+  abstract = "Recent work has revealed that overparameterized networks trained
+              by gradient descent achieve arbitrarily low training error, and
+              sometimes even low test error. The required width, however, is
+              always polynomial in at least one of the sample size $n$, the
+              (inverse) training error $1/\epsilon$, and the (inverse) failure
+              probability $1/\delta$. This work shows that
+              $\widetilde\{O\}(1/\epsilon)$ iterations of gradient descent on
+              two-layer networks of any width exceeding
+              $\mathrm\{polylog\}(n,1/\epsilon,1/\delta)$ and
+              $\widetilde\{\Omega\}(1/\epsilon^2)$ training examples suffices
+              to achieve a test error of $\epsilon$. The analysis further
+              relies upon a margin property of the limiting kernel, which is
+              guaranteed positive, and can distinguish between true labels and
+              random labels.",
+  journal  = "ArXiv",
+  year     =  2019
+}
+
+@ARTICLE{Wei2018-ng,
+  title    = "Regularization Matters: Generalization and Optimization of Neural
+              Nets v.s. their Induced Kernel",
+  author   = "Wei, Colin and Lee, Jason D and Liu, Qiang and Ma, Tengyu",
+  abstract = "Recent works have shown that on sufficiently over-parametrized
+              neural nets, gradient descent with relatively large
+              initialization optimizes a prediction function in the RKHS of the
+              Neural Tangent Kernel (NTK). This analysis leads to global
+              convergence results but does not work when there is a standard l2
+              regularizer, which is useful to have in practice. We show that
+              sample efficiency can indeed depend on the presence of the
+              regularizer: we construct a simple distribution in d dimensions
+              which the optimal regularized neural net learns with O(d) samples
+              but the NTK requires \textbackslashOmega(d^2) samples to learn.
+              To prove this, we establish two analysis tools: i) for
+              multi-layer feedforward ReLU nets, we show that the global
+              minimizer of a weakly-regularized cross-entropy loss is the max
+              normalized margin solution among all neural nets, which
+              generalizes well; ii) we develop a new technique for proving
+              lower bounds for kernel methods, which relies on showing that the
+              kernel cannot focus on informative features. Motivated by our
+              generalization results, we study whether the regularized global
+              optimum is attainable. We prove that for infinite-width two-layer
+              nets, noisy gradient descent optimizes the regularized neural net
+              loss to a global minimum in polynomial iterations.",
+  journal  = "NeurIPS 2019",
+  year     =  2018
+}
+
+@ARTICLE{Shin2019-eh,
+  title    = "Trainability and Data-dependent Initialization of
+              Over-parameterized {ReLU} Neural Networks",
+  author   = "Shin, Yeonjong and Karniadakis, George Em",
+  abstract = "A neural network is said to be over-specified if its
+              representational power is more than needed, and is said to be
+              over-parameterized if the number of parameters is larger than the
+              number of training data. In both cases, the number of neurons is
+              larger than what it is necessary. In many applications,
+              over-specified or over-parameterized neural networks are
+              successfully employed and shown to be trained effectively. In
+              this paper, we study the trainability of ReLU networks, a
+              necessary condition for the successful training. We show that
+              over-parameterization is both a necessary and a sufficient
+              condition for minimizing the training loss. Specifically, we
+              study the probability distribution of the number of active
+              neurons at the initialization. We say a network is trainable if
+              the number of active neurons is sufficiently large for a learning
+              task. With this notion, we derive an upper bound of the
+              probability of the successful training. Furthermore, we propose a
+              data-dependent initialization method in the over-parameterized
+              setting. Numerical examples are provided to demonstrate the
+              effectiveness of the method and our theoretical findings.",
+  journal  = "ArXiv",
+  year     =  2019
+}
+
+@ARTICLE{Eftekhari2019-dg,
+  title    = "Nearly Minimal {Over-Parametrization} of Shallow Neural Networks",
+  author   = "Eftekhari, Armin and Song, Chaehwan and Cevher, Volkan",
+  abstract = "A recent line of work has shown that an over-parametrized neural
+              network can perfectly fit the training data, an otherwise often
+              intractable nonconvex optimization problem. For (fully-connected)
+              shallow networks, in the best case scenario, the existing theory
+              requires quadratic over-parametrization as a function of the
+              number of training samples. This paper establishes that linear
+              over-parametrization is sufficient to fit the training data,
+              using a simple variant of the (stochastic) gradient descent.
+              Crucially, unlike several related works, the training considered
+              in this paper is not limited to the lazy regime in the sense
+              cautioned against in [1, 2]. Beyond shallow networks, the
+              framework developed in this work for over-parametrization is
+              applicable to a variety of learning problems.",
+  journal  = "ArXiv",
+  year     =  2019
+}
+
+@ARTICLE{Song2019-zh,
+  title    = "Quadratic Suffices for Over-parametrization via Matrix Chernoff
+              Bound",
+  author   = "Song, Zhao and Yang, Xin",
+  abstract = "We improve the over-parametrization size over two beautiful
+              results [Li and Liang' 2018] and [Du, Zhai, Poczos and Singh'
+              2019] in deep learning theory.",
+  journal  = "ArXiv",
+  year     =  2019
+}
+
+@ARTICLE{Kawaguchi2019-bx,
+  title    = "Gradient Descent Finds Global Minima for Generalizable Deep
+              Neural Networks of Practical Sizes",
+  author   = "Kawaguchi, Kenji and Huang, Jiaoyang",
+  abstract = "In this paper, we theoretically prove that gradient descent can
+              find a global minimum for nonlinear deep neural networks of sizes
+              commonly encountered in practice. The theory developed in this
+              paper requires only the number of trainable parameters to
+              increase linearly as the number of training samples increases.
+              This allows the size of the deep neural networks to be several
+              orders of magnitude smaller than that required by the previous
+              theories. Moreover, we prove that the linear increase of the size
+              of the network is the optimal rate and that it cannot be
+              improved, except by a logarithmic factor. Furthermore, deep
+              neural networks with the trainability guarantee are shown to
+              generalize well to unseen test samples with a natural dataset but
+              not a random dataset.",
+  journal  = "ArXiv",
+  year     =  2019
+}
+
+@ARTICLE{Allen-Zhu2018-uz,
+  title    = "A Convergence Theory for Deep Learning via
+              {Over-Parameterization}",
+  author   = "Allen-Zhu, Zeyuan and Li, Yuanzhi and Song, Zhao",
+  abstract = "Deep neural networks (DNNs) have demonstrated dominating
+              performance in many fields; since AlexNet, networks used in
+              practice are going wider and deeper. On the theoretical side, a
+              long line of works has been focusing on training neural networks
+              with one hidden layer. The theory of multi-layer networks remains
+              largely unsettled. In this work, we prove why stochastic gradient
+              descent (SGD) can find $\textit\{global minima\}$ on the training
+              objective of DNNs in $\textit\{polynomial time\}$. We only make
+              two assumptions: the inputs are non-degenerate and the network is
+              over-parameterized. The latter means the network width is
+              sufficiently large: $\textit\{polynomial\}$ in $L$, the number of
+              layers and in $n$, the number of samples. Our key technique is to
+              derive that, in a sufficiently large neighborhood of the random
+              initialization, the optimization landscape is almost-convex and
+              semi-smooth even with ReLU activations. This implies an
+              equivalence between over-parameterized neural networks and neural
+              tangent kernel (NTK) in the finite (and polynomial) width
+              setting. As concrete examples, starting from randomly initialized
+              weights, we prove that SGD can attain 100\% training accuracy in
+              classification tasks, or minimize regression loss in linear
+              convergence speed, with running time polynomial in $n,L$. Our
+              theory applies to the widely-used but non-smooth ReLU activation,
+              and to any smooth and possibly non-convex loss functions. In
+              terms of network architectures, our theory at least applies to
+              fully-connected neural networks, convolutional neural networks
+              (CNN), and residual neural networks (ResNet).",
+  journal  = "ICML",
+  year     =  2018
+}
+
+@ARTICLE{Du2018-dv,
+  title         = "Gradient Descent Finds Global Minima of Deep Neural Networks",
+  author        = "Du, Simon S and Lee, Jason D and Li, Haochuan and Wang,
+                   Liwei and Zhai, Xiyu",
+  abstract      = "Gradient descent finds a global minimum in training deep
+                   neural networks despite the objective function being
+                   non-convex. The current paper proves gradient descent
+                   achieves zero training loss in polynomial time for a deep
+                   over-parameterized neural network with residual connections
+                   (ResNet). Our analysis relies on the particular structure of
+                   the Gram matrix induced by the neural network architecture.
+                   This structure allows us to show the Gram matrix is stable
+                   throughout the training process and this stability implies
+                   the global optimality of the gradient descent algorithm. We
+                   further extend our analysis to deep residual convolutional
+                   neural networks and obtain a similar convergence result.",
+  month         =  nov,
+  year          =  2018,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "1811.03804"
+}
