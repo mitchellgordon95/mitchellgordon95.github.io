@@ -228,6 +228,15 @@ so maybe check out those, too.
 </tr>
 </table>
 
+If you found this post useful, please consider citing it as:
+{% highlight bibtex %}
+@misc{gordon_2019,
+    author = "Mitchell A. Gordon",
+    title = "All The Ways You Can Compress BERT",
+    year = "2019",
+    url = "http://mitchgordon.me/machine/learning/2019/11/18/all-the-ways-to-compress-BERT.html",
+}
+{% endhighlight %}
 
 
 # Bonus Papers / Blog Posts

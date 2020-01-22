@@ -267,4 +267,14 @@ If you work on this stuff, feel free to shoot me an
 [email](mitchell.gordon95@gmail.com). I'd love to join (or start) a mailing list
 or something.
 
+If you found this post useful, please consider citing it as:
+{% highlight bibtex %}
+@misc{gordon_2019,
+    author = "Mitchell A. Gordon",
+    title = "Do We Really Need Model Compression?",
+    year = "2020",
+    url = "http://mitchgordon.me/machine/learning/2020/01/13/do-we-really-need-model-compression.html",
+}
+{% endhighlight %}
+
 ---
