@@ -277,4 +277,6 @@ If you found this post useful, please consider citing it as:
 }
 {% endhighlight %}
 
+Update 1/22/2020: Apparently Tensorflow 2.0 comes with [mixed precision training](https://www.tensorflow.org/guide/keras/mixed_precision) out of the box now, which is pretty sick (assuming you have modern DL accelerators).
+
 ---
