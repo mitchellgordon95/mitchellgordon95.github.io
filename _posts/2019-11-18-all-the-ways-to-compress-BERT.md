@@ -234,7 +234,7 @@ If you found this post useful, please consider citing it as:
     author = "Mitchell A. Gordon",
     title = "All The Ways You Can Compress BERT",
     year = "2019",
-    url = "http://mitchgordon.me/machine/learning/2019/11/18/all-the-ways-to-compress-BERT.html",
+    howpublished="http://mitchgordon.me/machine/learning/2019/11/18/all-the-ways-to-compress-BERT.html",
 }
 {% endhighlight %}
 

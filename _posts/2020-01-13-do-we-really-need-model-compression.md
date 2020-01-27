@@ -273,7 +273,7 @@ If you found this post useful, please consider citing it as:
     author = "Mitchell A. Gordon",
     title = "Do We Really Need Model Compression?",
     year = "2020",
-    url = "http://mitchgordon.me/machine/learning/2020/01/13/do-we-really-need-model-compression.html",
+    howpublished="http://mitchgordon.me/machine/learning/2020/01/13/do-we-really-need-model-compression.html",
 }
 {% endhighlight %}
 
