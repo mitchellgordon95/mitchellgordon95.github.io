@@ -100,6 +100,15 @@ searching over architectures or worrying that a bigger network might give us
 better performance. Extensions of the proofs to recurrent models, transformers,
 models trained with batch norm, etc. are also still in question.
 
+Edit (2/2/20): I neglected to mention that different architectures will probably have
+different over-parameterization bounds. A reasonable approach then is to use a
+different architecture that has a lower over-parameterization bound. Some
+interesting "efficient transformers" include the
+[Reformer](https://openreview.net/forum?id=rkgNKkHtvB),
+[ALBERT](https://openreview.net/forum?id=H1eA7AEtvS), [Sparse
+Transformers](https://openai.com/blog/sparse-transformer/), and
+[SRUs](https://arxiv.org/abs/1709.02755).
+
 [^bounds]: And it's very active. I've seen a [bunch of papers]({{'/assets/overparam-papers.bibtex'| absolute_url }}) (that I haven't read) improving on these types of bounds.
 
 ## Better Optimization Techniques
