@@ -4,6 +4,7 @@ title:  "All The Ways You Can Compress BERT"
 categories: "machine learning"
 ---
 
+
 Model compression reduces redundancy in a trained neural network. This is
 useful, since BERT barely fits on a GPU (BERT-Large does not) and definitely
 won't fit on your smart phone. Improved memory and inference speed efficiency
@@ -12,6 +13,9 @@ can also save costs at scale.
 In this post I'll list and briefly taxonomize all the papers I've seen
 compressing BERT. Don't see yours? Feel free to shoot me an
 [email](mailto:mitchell.gordon95@gmail.com).
+
+Update 3/3/20: A [survey paper](https://arxiv.org/abs/2002.11985) of BERT
+compression methods has been released by Ganesh et al.
 
 ## Methods
 
