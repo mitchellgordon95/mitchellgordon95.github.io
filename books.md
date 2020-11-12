@@ -28,14 +28,14 @@ bookshelf](http://worrydream.com/#!/Links).
 
 [Salt Acid Fat Heat](https://amzn.to/2EQIBWi) - Samin Nosrat
 
-An introduction to information theory; symbols, signals, and noise - Pierce
-
-MIT Strang's Introduction to Linear Algebra 
-(and associated lectures 2005)
-
-[Chaos](https://www.amazon.com/Chaos-Making-Science-James-Gleick/dp/0143113453) - James Gleick
+[Chaos](https://www.amazon.com/Chaos-Making-Science-James-Gleick/dp/0143113453) - James Gleick  
 [The Information](https://www.amazon.com/Information-History-Theory-Flood/dp/1400096235) - James Gleick
 
 [Arithmetic](https://www.amazon.com/Arithmetic-Paul-Lockhart/dp/0674972236) - Paul Lockhart
 
 [Metaphors We Live By](https://www.amazon.com/Metaphors-We-Live-George-Lakoff/dp/0226468011) - Lakoff and Johnson
+
+# Currently Reading
+[Infinite Powers](https://www.amazon.com/Infinite-Powers-Calculus-Reveals-Universe/dp/1328879984) - Steven Strogatz  
+[How To Program Any Synthesizer](https://www.amazon.com/How-Program-Synthesizer-Ashley-Hewitt/dp/1999600304) - Ashley Hewitt  
+[Actionable Gamification](https://www.amazon.com/Actionable-Gamification-Beyond-Points-Leaderboards/dp/1511744049/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=) - Yu-kai Chou  
