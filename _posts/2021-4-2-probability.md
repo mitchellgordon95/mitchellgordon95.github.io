@@ -28,7 +28,7 @@ up on deeply understanding a causal explanation of the phenomena and instead
 sweeping the details under the rug of "the distribution."
 
 This makes probability theory the science of last resort. Only after truly
-exhausted your ability to investigate causal factors and processes should you
+exhausting your ability to investigate causal factors and processes should you
 indulge in probabilistic thinking. Doing otherwise is a cop-out, one that
 dangerously *feels* "scientific."
 
