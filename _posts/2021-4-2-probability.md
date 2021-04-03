@@ -63,9 +63,9 @@ work or simply assuming data is randomly iid, they will often choose the latter,
 especially when the latter appears to be "scientifically and mathematically
 rigorous." However, mathematics are only as correct as the assumptions made at
 the beginning, and by hiding the causal factors of an event behind the
-abstraction of a "probability distribution" we deprive ourselves of identifying
-when those causal factors change and our assumptions no longer hold (i.e. the
-distribution shifts).[^magnets]
+abstraction of a "probability distribution" we deprive ourselves of the ability
+to identify when those causal factors change and our assumptions no longer hold
+(i.e. the distribution shifts).[^magnets]
 
 [^magnets]: For example, I may experiment with a coin and decide that it is fair when tossing it onto a wooden surface, only to discover later that the coin is magnetized and slightly biased towards heads on metallic surfaces.
 
