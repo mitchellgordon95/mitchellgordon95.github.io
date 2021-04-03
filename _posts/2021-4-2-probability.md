@@ -48,9 +48,10 @@ shrugs, the scientist continues searching for explanations.
     
 Similar things can be said about drawing a card from a deck of cards. A casual
 observer may reasonably assign uncertainty to the event. But to the magician who
-controls the precise method of shuffling, this is obviously a cop-out. Or
-consider a randomized clinical study in which a drug harms patients in 0.01% of
-cases. It's easy to sweep the causal factors under the rug and assume the
+controls the precise method of shuffling, this is obviously a cop-out. 
+
+Or consider a randomized clinical study in which a drug harms patients in 0.01%
+of cases. It's easy to sweep the causal factors under the rug and assume the
 effects are "randomly distributed." But we can imagine more information
 gathering revealing that all instances of harm occured in an ethnic minority. In
 practice, "randomness" is more often a cop-out than an unavoidable facet of the
