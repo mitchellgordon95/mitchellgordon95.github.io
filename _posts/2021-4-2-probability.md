@@ -21,7 +21,7 @@ adversary to take advantage of us when gambling).
 
 However, I believe there are tasteful and distasteful applications of
 probability theory. This is because the application of probability to a
-particular event requires a suspension of disbelief; to consider an event as
+particular event requires a suspension of disbelief. To consider an event as
 repeatable and iid is to accept that the causal factors driving the outcome are
 (practically) unobservable and therefore ignorable. In effect, it means giving
 up on deeply understanding a causal explanation of the phenomena and instead
