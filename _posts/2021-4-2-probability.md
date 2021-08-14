@@ -32,6 +32,8 @@ exhausting your ability to investigate causal factors and processes should you
 indulge in probabilistic thinking. Doing otherwise is a cop-out, one that
 dangerously *feels* "scientific."
 
+### Examples of Distaste
+
 The tastefulness of a particular application of probability theory is a matter
 of context. Consider the humble coin flip. A lay-person may reasonably assume
 that this event is a repeatable, iid experiment with a uniform prior; they may
@@ -56,6 +58,8 @@ effects are "randomly distributed." But we can imagine more information
 gathering revealing that all instances of harm occured in an ethnic minority. In
 practice, "randomness" is more often a cop-out than an unavoidable facet of the
 system under study.
+
+### Human Nature
 
 My struggle with probability theory is that it lends itself to distaste. Humans
 are lazy, and when presented with the option of doing more investigative leg
