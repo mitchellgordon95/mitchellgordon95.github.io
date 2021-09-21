@@ -9,33 +9,46 @@ order. Similar to [Patrick Colison's
 bookshelf](https://patrickcollison.com/bookshelf) and [Bret Victor's
 bookshelf](http://worrydream.com/#!/Links).
 
-[Predictably Irrational](https://amzn.to/2XCh3LH) - Dan Ariely
+Predictably Irrational - Dan Ariely
 
-[Pragmatic Programmer](https://amzn.to/2HlN6JZ) - Hunt and Thomas
+Pragmatic Programmer - Hunt and Thomas
 
-[The Signal and the Noise](https://amzn.to/2VG6S6O)- Nate Silver
+The Signal and the Noise- Nate Silver
 
-[Deep Work](https://amzn.to/2UjKEY9) - Cal Newport  
-[Digital Minimalism](https://amzn.to/2TyTwfb) - Cal Newport
+Deep Work - Cal Newport  
+Digital Minimalism - Cal Newport
 
-[On Intelligence](https://amzn.to/2tS2CFx) - Jeff Hawkins
+On Intelligence - Jeff Hawkins
 
-[The Subtle Art of Not Giving a Fuck](https://amzn.to/2EQIslI) - Mark Manson
+The Subtle Art of Not Giving a Fuck - Mark Manson
 
-[Silence in the Age of Noise](https://amzn.to/2ETexJz) - Erling Kagge
+Silence in the Age of Noise - Erling Kagge
 
-[Godel Escher Bach](https://amzn.to/2H52kUv) - Doug Hofstadter
+Godel Escher Bach - Doug Hofstadter
 
-[Salt Acid Fat Heat](https://amzn.to/2EQIBWi) - Samin Nosrat
+Salt Acid Fat Heat - Samin Nosrat
 
-[Chaos](https://www.amazon.com/Chaos-Making-Science-James-Gleick/dp/0143113453) - James Gleick  
-[The Information](https://www.amazon.com/Information-History-Theory-Flood/dp/1400096235) - James Gleick
+Chaos - James Gleick  
+The Information - James Gleick
 
-[Arithmetic](https://www.amazon.com/Arithmetic-Paul-Lockhart/dp/0674972236) - Paul Lockhart
+Arithmetic - Paul Lockhart
 
-[Metaphors We Live By](https://www.amazon.com/Metaphors-We-Live-George-Lakoff/dp/0226468011) - Lakoff and Johnson
+Metaphors We Live By - Lakoff and Johnson
+
+Netflix: No Rules Rules - Erin Meyer and Reed Hastings 
+
+Leadership and Self-Deception - The Arbinger Institute
+
+Elements of Information Theory - Cover and Thomas
+
+Waking Up - Sam Harris
+
+Come As You Are - Emily Nagoski
 
 # Currently Reading
-[Infinite Powers](https://www.amazon.com/Infinite-Powers-Calculus-Reveals-Universe/dp/1328879984) - Steven Strogatz  
-[How To Program Any Synthesizer](https://www.amazon.com/How-Program-Synthesizer-Ashley-Hewitt/dp/1999600304) - Ashley Hewitt  
-[Actionable Gamification](https://www.amazon.com/Actionable-Gamification-Beyond-Points-Leaderboards/dp/1511744049/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=) - Yu-kai Chou  
+Infinite Powers - Steven Strogatz  
+How To Program Any Synthesizer - Ashley Hewitt  
+Actionable Gamification - Yu-kai Chou  
+
+Set Boundaries, Find Peace - Nedra Glover
+Against Method - Paul Feyerabend
