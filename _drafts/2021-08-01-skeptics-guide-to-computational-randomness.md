@@ -4,62 +4,60 @@ title:  "A Skeptic's Guide To Computational Randomness"
 categories: math
 ---
 
-Probability theory quantifies the uncertainty of an **event** by assigning
-numbers to each of the possible outcomes.  Generally, there are four
-philosophical justifications for the quantification of uncertainty and
-the axioms associated with manipulating them:
+What does it mean to be random? In popular mathematics, there are a
+few flavors of probability theory, each with its own philosophical
+justification for why we should consider one event or another to be
+"random." An event could be considered random if...
 
-- **Classical**: All outcomes are symmetric, so I have no
-  justification in assigning a higher probability to one outcome than
-  another. For example, rolling a particular side of a die is assumed
-  to be equiprobable, as is drawing a card from a deck.
+- **Classical**: all outcomes are symmetric, so
+  we have no justification in assigning a higher probability to one
+  outcome than another. For example, rolling a particular side of a
+  die is assumed to be equiprobable, as is drawing a card from a deck.
 
-- **Frequentist**: The event is assumed to be repeatable, with the
-  outcome depending on some initial condition totally unobservable to
-  me. Furthermore, we assume that the ratio of outcomes approaches
-  some limiting frequency as $$n \rightarrow \inf$$. These assumptions
-  tend to be quite arduous to attain in practice.
+- **Frequentist**: the event is "repeatable," with the outcome
+  depending on some initial condition totally unobservable to
+  us. Furthermore, the ratio of outcomes must approach some limiting
+  frequency as $$n \rightarrow \inf$$. (These assumptions tend to be
+  quite arduous to attain in practice.)
   
-- **Bayesian**: All uncertainty is subjective and depends on the
-  information you currently have available. Whatever your prior is,
-  you must update your beliefs in a principled and consistent way when
-  confronted with data.
+- **Bayesian**: you, the subjective observer, consider it to be
+   random, given the information at your disposal.
   
-- **Logical**: Our assignments of probability to individual
-  outcomes may be inconsistent with the world, but we can at least
-  ensure that our beliefs are logically self-consistent. For example,
-  if I am making odds for betting on horse racing, you should not be
-  able to bet in such a way that always makes money.
-  
-None of these axiomatic justifications sat quite right with me. I
-leaned towards Bayesian and logical justifications some days, and
-others I simply
-[despaired](http://mitchgordon.me/math/2021/04/02/probability.html) at
-the prevlance of misapplication of a mental tool which claimed to be a
-guide towards reason.
+I've always
+[struggled](http://mitchgordon.me/math/2021/04/02/probability.html)
+with these assumptions, which has made it hard to engage with
+probability theory. And as a coder, I like to implement axioms and
+theorems in code, when possible, as part of my learning process. But
+none of the above axiomatic definitions of a "random event" are easily
+implementable in code, making it difficult to code up an empirical
+demonstration of a probability theorem (like the Law of Large
+Numbers). The closest I got was:
 
-In times like these, I've found attempting to write down the
-mathematical ideas I'm struggling with as executable code provides a
-clarity unique to constructive mathematics. Probability theory
-resisted these attempts. Discouraged, but not defeated, I started
-digging into the literature of random number generators (RNGs),
-thinking that those scientists, if anyone, must have a rigorous,
-empirically falsifiable definition of what it means to be random.
+```python
+import numpy.random as random
+samples = random.random(100)
+```
 
-This post is about what I've found. In summary:
+How in the world is this function implemented? How would you write a
+unit test for this? To find answers, I started digging into the
+literature on Pseudo-Random Number Generators (PRNGs), of which
+`numpy.random.random` is one. This post is about what I've learned. In
+summary:
 
 1. Randomness depends on your *computational frame of reference*. A
    bit stream is *theoretically random* if there **does not exist** a
    computer program which can predict the next bit in a reasonable
-   amount of time. A bit stream is *empirically random* if we **try
+   amount of time. 
+   
+1. A bit stream is *empirically random* if we **try
    really hard** to predict the next bit (via a suite of statistical
    tests) and fail.
    
-2. There are several physical sources of bits (thermal, chaotic,
+1. There are several physical sources of bits (thermal, chaotic,
    quantum) which seem to be empirically random. These are called true
    random number generators (TRNGs).
    
-3. We often apply deterministic functions to random bit streams
+1. We often apply deterministic functions to random bit streams
    (averages, gaussian transformations, etc.). Probability theory is
    about leveraging properties of these functions to turn statements
    of ignorance and inability (per #1) into statements of certainty.
