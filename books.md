@@ -45,10 +45,10 @@ Waking Up - Sam Harris
 
 Come As You Are - Emily Nagoski
 
-# Currently Reading
-Infinite Powers - Steven Strogatz  
-How To Program Any Synthesizer - Ashley Hewitt  
-Actionable Gamification - Yu-kai Chou  
+Actionable Gamification - Yu-kai Chou
 
-Set Boundaries, Find Peace - Nedra Glover
-Against Method - Paul Feyerabend
+Infinite Powers - Steven Strogatz
+
+Inspired - Marty Cagan
+
+Accessing the Healing Power of The Vagus Nerve - Stanley Rosenberg
