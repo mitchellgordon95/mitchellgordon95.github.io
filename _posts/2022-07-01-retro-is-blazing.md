@@ -26,6 +26,7 @@ I used a [fork of LucidRain’s RETRO-pytorch](https://github.com/latitudegames/
 I used The Pile as my benchmark dataset, which is an open-source dataset provided by EleutherAI. It weighs in at around 830 GB of raw text. To get a sense of how much data this is, notice the “Wikipedia” section in the source breakdown below:
 
 ![Pile Overview]({{'assets/pile_overview.png' | absolute_url}})
+https://arxiv.org/abs/2101.00027
 
 ## Building The Database
 
