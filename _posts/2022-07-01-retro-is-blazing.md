@@ -36,6 +36,8 @@ Building a database of The Pile was surprisingly cheap by neural network trainin
 2. Embed the chunks with BERT
 3. Index the embeddings with a MIPS library (FAISS, SCANN, etc.)
 
+![RETRO Database Prep]({{'assets/retro_database_prep.png' | absolute_url}})
+
 ### Tokenization
 
 Tokenization takes around 1.9 min / 1M chunks on your standard CPU core. The Pile ends up being around 5.8B chunks (370B tokens), so that means you’re looking at ~180 hours of CPU time to tokenize, which you can easily parallelize down to only a few hours of wall time.
