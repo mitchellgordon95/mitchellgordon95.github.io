@@ -3,7 +3,7 @@ layout: post
 title:  "RETRO Is Blazingly Fast"
 categories: ml
 ---
-When I first read Google’s RETRO paper, I was skeptical. Sure, RETRO models are 25x smaller than the competition, supposedly leading to HUGE savings in training and inference costs. But what about the new “trillion token retrieval database” part of the architcture? Surely that must add back some computational costs, balancing the cosmic seesaw?
+When I first read Google’s RETRO paper, I was skeptical. Sure, RETRO models are 25x smaller than the competition, supposedly leading to HUGE savings in training and inference costs. But what about the new trillion token "retrieval database" they added to the architcture? Surely that must add back some computational costs, balancing the cosmic seesaw?
 
 Apparently not. After running benchmarks for myself, at scale, I am convinced that RETRO is indeed BLAZINGLY fast. RETRO is so fast and cheap, in fact, that I cannot fathom why anyone would choose to do language modeling without retrieval.
 
@@ -26,7 +26,7 @@ I used a [fork of LucidRain’s RETRO-pytorch](https://github.com/latitudegames/
 I used The Pile as my benchmark dataset, which is an open-source dataset provided by EleutherAI. It weighs in at around 830 GB of raw text. To get a sense of how much data this is, notice the “Wikipedia” section in the source breakdown below:
 
 ![Pile Overview]({{'assets/pile_overview.png' | absolute_url}})
-https://arxiv.org/abs/2101.00027
+[https://arxiv.org/abs/2101.00027](https://huggingface.co/latitude/RETRO_retrieval)
 
 ## Building The Database
 
@@ -44,7 +44,7 @@ With a CPU core on the cloud going for around $0.03 / hour, that means you’ll 
 
 ### Embedding
 
-BERT embedding is the most expensive step. On an RTX A5000, BERT embedding takes around 40 minutes per 4M chunks.[^2] That’s around 1k GPU hours to embed The Pile, which again is very easy to parallelize. This cost around $1k on [Coreweave](https://www.coreweave.com/pricing).
+BERT embedding is the most expensive step. On an RTX A5000, BERT embedding takes around 10 minutes per 1M chunks.[^2] That’s around 1k GPU hours to embed The Pile, which again is very easy to parallelize. This cost around $1k on [Coreweave](https://www.coreweave.com/pricing).
 
 [^2]: Naively, I didn’t do much optimization here. I suspect the bottleneck is probably getting data off disk to the GPU, not the computation speed.
 
@@ -72,7 +72,7 @@ Once the index is trained, we can add all the embeddings to the index, compressi
 
 ## Querying the Database
 
-Now that we’ve built the database, how long does it take to query it? Personally, I would have been happy with anything < 500ms, since that would have represented a marginal increase in existing generation times. For reference, here’s how long it takes to generate around 50 tokens with various language models:
+Now that we’ve built the database, how long does it take to query it? Personally, I would have been happy with anything < 100ms, since that would have represented a marginal increase in existing generation times. For reference, here’s how long it takes to generate around 50 tokens with various language models:
 
 - GPT-J (6B): ~3s
 - AI21 Grande (17B): ~4s
@@ -111,9 +111,9 @@ result 2: starmail. com Subject : oops Soz babe didnt mean to sned that!!!! Was 
 
 The FAISS index is not totally cost free. The index itself ends up being big, requiring around 176 GB of RAM to query, which costs about $0.88 per hour on your average cloud provider.
 
-However, this allows you to drastically reduce your GPU usage. Say, for example, you need 5 GPUs running in parallel to do inference on a 175B parameter model, which costs around $6 an hour. By adding an extra $0.88 in CPU RAM, you can reduce the number of GPUs you have to run to just 1, saving around $5 in GPU costs. I’d take that trade any day.
+However, this allows you to drastically reduce your GPU usage. Say, for example, you need 5 GPUs running in parallel to do inference on a 175B parameter model, which costs around $6 an hour. By adding an extra $0.88 / hour in CPU RAM, you can reduce the number of GPUs you have to run to just 1, saving around $5 / hour in GPU costs. I’d take that trade any day.
 
-This also applies to models that are already using a single GPU. By shrinking your model with RETRO’s database, requests get served faster, meaning more GPU bang for your buck. Instead of serving 60 req / hour on a single GPU, you’re serving 600+.
+This also applies to models that are already using a single GPU. By shrinking your model with RETRO’s database, requests get served faster, meaning more GPU bang for your buck. Instead of serving 60 req / hour on a single GPU, you’re serving 600+, just for a little extra CPU RAM.
 
 ## Conclusion
 
