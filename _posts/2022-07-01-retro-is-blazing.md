@@ -81,7 +81,7 @@ Now that we’ve built the database, how long does it take to query it? Personal
 - GPT-NeoX (20B): >4s
 - AI21 Jumbo (175B): ~6.5s (x ~6 GPUs)
 
-In practice, our FAISS index takes between **2 and 40 ms**,[^4] based on my manual testing. That’s… really fast. Embedding the query with BERT takes an additional 10 ms on a CPU. Altogether, **the cost of querying the database during inference and training has a totally neglibile impact on performance.**
+In practice, our FAISS index takes between **2 and 40 ms**,[^4] based on my manual testing. That’s… really fast. Embedding the query with BERT takes an additional 10 ms on a CPU. Altogether, **the cost of querying the database during inference and training has a totally neglibile impact on total cost.**
 
 [^4]: For k=5, with the IVF nprobe also set to 5. (Which seems to be a standard setting, but could be tuned to trade speed / accuracy.)
 
