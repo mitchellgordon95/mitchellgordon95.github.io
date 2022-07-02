@@ -5,7 +5,7 @@ categories: ml
 ---
 When I first read Google’s RETRO paper, I was skeptical. Sure, RETRO models are 25x smaller than the competition, supposedly leading to HUGE savings in training and inference costs. But what about the new “trillion token retrieval database” part of the architcture? Surely that must add back some computational costs, balancing the cosmic seesaw?
 
-But apparently not. After running benchmarks for myself, at scale, I am convinced that RETRO is indeed BLAZINGLY fast. RETRO is so fast and cheap, in fact, that I cannot fathom why anyone would choose to do language modeling without retrieval.
+Apparently not. After running benchmarks for myself, at scale, I am convinced that RETRO is indeed BLAZINGLY fast. RETRO is so fast and cheap, in fact, that I cannot fathom why anyone would choose to do language modeling without retrieval.
 
 ## RETRO Overview
 
