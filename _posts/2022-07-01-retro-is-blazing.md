@@ -15,9 +15,9 @@ To achieve similar performance to bigger models like OpenAI’s GPT-3, RETRO add
 
 [https://jalammar.github.io/illustrated-retrieval-transformer/](https://jalammar.github.io/illustrated-retrieval-transformer/)
 
-We’ll see that making and querying this database is orders of magnitude cheaper than training / inference on big neural networks. In this post I’ll briefly describe how the database is constructed and some benchmarks I did while making a database of The Pile, which you can (kind of) download on huggingface.[^1]
+We’ll see that making and querying this database is orders of magnitude cheaper than training / inference on big neural networks. In this post I’ll briefly describe how the database is constructed and some benchmarks I did while making a database of The Pile, which you can (kind of) download [on huggingface](https://huggingface.co/latitude/RETRO_retrieval).[^1]
 
-[^1]: This is just the compressed FAISS index file, which is already cutting it close with the HGF max file size of 50 GB. Querying it will give you an index into the tokenized and chunked Pile data which is much larger (1.5 TB). If you want it, feel free to shoot me an email.
+[^1]: This is just the compressed FAISS index file, which is already cutting it close with the HGF max file size of 50 GB. Querying it will give you an index into the tokenized and chunked Pile data which is much larger (1.5 TB). If you want the tokens, feel free to shoot me an email.
 
 I used a [fork of LucidRain’s RETRO-pytorch](https://github.com/latitudegames/RETRO-pytorch) implementation, which has been modified to handle some scale things like parallelization of jobs. Also thanks to my employer, [Latitude](https://latitude.io/), for giving me the compute to do these experiments.
 
