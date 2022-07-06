@@ -119,6 +119,8 @@ However, this allows you to drastically reduce your GPU usage. Say, for example,
 
 This also applies to models that are already using a single GPU. By shrinking your model with RETRO’s database, requests get served faster, meaning more GPU bang for your buck. Instead of serving 60 req / hour on a single GPU, you’re serving 600+, just for a little extra CPU RAM.
 
+Update (7/6/22) - I've been informed that FAISS has the ability to memory map an index, which allows you to read it directly from disk instead of allocating RAM for it. This is slightly slower, of course, but probably worth the trade. (Thanks rom1504.)
+
 ## Conclusion
 
 At first I was skeptical, but upon closer inspection it seems like RETRO is indeed a HUGE cost savings over existing LM approaches. These cost savings seem to boil down to the fact that MIPS is super optimized by existing libraries and only requires more CPU RAM to use. Based on these observations, I can’t imagine why anyone doing language modeling in production would choose to do it without retrieval.
