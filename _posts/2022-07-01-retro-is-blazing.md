@@ -50,7 +50,7 @@ BERT embedding is the most expensive step. On an RTX A5000, BERT embedding takes
 
 [^2]: Naively, I didn’t do much optimization here. I suspect the bottleneck is probably getting data off disk to the GPU, not the computation speed.
 
-Note that BERT embeddings are around 23 KB each on disk. (768 float32s). 5.8B of them takes up about 16 TB on disk, so watch out for that. (Disk space is cheap.)
+Note that BERT embeddings are around 3 KB each on disk. (768 float32s). 5.8B of them takes up about 16 TB on disk, so watch out for that. (Disk space is cheap.)
 
 ### MIPS Indexing
 
