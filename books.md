@@ -12,6 +12,7 @@ bookshelf](http://worrydream.com/#!/Links).
 Predictably Irrational - Dan Ariely
 
 Pragmatic Programmer - Hunt and Thomas
+The Elements of Programming in Python - Adnan Aziz, Tsung-Hsien Lee, Amit Prakash
 
 The Signal and the Noise- Nate Silver
 
@@ -35,12 +36,14 @@ Arithmetic - Paul Lockhart
 
 Metaphors We Live By - Lakoff and Johnson
 
-Netflix: No Rules Rules - Erin Meyer and Reed Hastings 
-
-Leadership and Self-Deception - The Arbinger Institute
+Netflix: No Rules Rules - Erin Meyer and Reed Hastings  
+Leadership and Self-Deception - The Arbinger Institute  
+Inspired - Marty Cagan  
+This Is Lean - Niklas Modig, Pär Åhlström
 
 Elements of Information Theory - Cover and Thomas
 
+The Science of Enlightenment - Shinzen Young  
 Waking Up - Sam Harris
 
 Come As You Are - Emily Nagoski
@@ -49,6 +52,5 @@ Actionable Gamification - Yu-kai Chou
 
 Infinite Powers - Steven Strogatz
 
-Inspired - Marty Cagan
-
+Unwinding Anxiety - Judson Brewer  
 Accessing the Healing Power of The Vagus Nerve - Stanley Rosenberg
