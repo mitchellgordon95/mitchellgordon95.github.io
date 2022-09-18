@@ -11,7 +11,7 @@ bookshelf](http://worrydream.com/#!/Links).
 
 Predictably Irrational - Dan Ariely
 
-Pragmatic Programmer - Hunt and Thomas
+Pragmatic Programmer - Hunt and Thomas  
 The Elements of Programming in Python - Adnan Aziz, Tsung-Hsien Lee, Amit Prakash
 
 The Signal and the Noise- Nate Silver
