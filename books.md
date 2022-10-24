@@ -44,6 +44,7 @@ This Is Lean - Niklas Modig, Pär Åhlström
 Elements of Information Theory - Cover and Thomas
 
 The Science of Enlightenment - Shinzen Young  
+In the Buddha's Words: An Anthology of Discourses from the Pali Canon - Bhikkhu Bodhi  
 Waking Up - Sam Harris
 
 Come As You Are - Emily Nagoski
