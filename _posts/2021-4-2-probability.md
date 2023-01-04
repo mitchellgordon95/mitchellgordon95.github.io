@@ -4,6 +4,8 @@ title:  "My Struggle With Probability Theory"
 categories: math
 ---
 
+> TL;DR - the fundamental assumption of probability theory is one of ignorance. This assumption is too easy to break in most contexts and leads to unfounded confidence in conclusions.
+
 There are many circumstances in which uncertainty is warranted.[^uncertainty]
 Gas temperature measurements, weather forecasts, horse races, coin flips, and
 clinical trials all have some uncertainty involved. Probability theory is the
