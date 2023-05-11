@@ -17,7 +17,7 @@ To achieve similar performance to bigger models like OpenAI’s GPT-3, RETRO add
 
 We’ll see that making and querying this database is orders of magnitude cheaper than training / inference on big neural networks. In this post I’ll briefly describe how the database is constructed and some benchmarks I did while making a database of The Pile, which I'm happy to share [by request](mailto:mitchell.gordon95@gmail.com).[^1]
 
-[^1]: I tried uploading some of it to Huggingface, but even the compressed FAISS index file exceeded the max 50 GB file size. The tokens themselves are over 1.5 TB. Feel free to shoot me an email and I'll get you a copy.
+[^1]: I tried uploading some of it to Huggingface, but even the compressed FAISS index file exceeded the max 50 GB file size. The tokens themselves are over 1.5 TB. Feel free to shoot me an email and I'll get you a copy. Update (5/11/23) - I no longer work at Latitude and therefore no longer have access to this index. Sorry!
 
 I used a [fork of LucidRain’s RETRO-pytorch](https://github.com/latitudegames/RETRO-pytorch) implementation, which has been modified to handle some scale things like parallelization of jobs. Also thanks to my employer, [Latitude](https://latitude.io/), for giving me the compute to do these experiments.
 
