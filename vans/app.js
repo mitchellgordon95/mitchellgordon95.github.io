@@ -201,6 +201,7 @@ function renderVans() {
 }
 
 function renderLocations() {
+    console.log('Rendering locations:', locations);
     const locationList = document.getElementById('location-list');
     locationList.innerHTML = locations.map(location => `
         <div class="location-item">
@@ -209,7 +210,7 @@ function renderLocations() {
                    placeholder="Enter address" 
                    value="${location.name}"
                    data-location-id="${location.id}"
-                   data-selected="false">
+                   data-selected="${location.name ? 'true' : 'false'}">
             <input type="number" 
                    min="1" 
                    value="${location.passengerCount}"
@@ -246,6 +247,7 @@ function renderLocations() {
                 
                 input.dataset.selected = 'true';
                 updateLocationName(locationId, place.formatted_address);
+                updateCalculateButton();
             }
         });
     });
@@ -332,10 +334,23 @@ function updateCalculateButton() {
     const allLocationsSelected = Array.from(locationInputs).every(input => input.dataset.selected === 'true');
     const depotSelected = depotInput.dataset.selected === 'true';
     
+    console.log('Calculate button status check:', {
+        vansCount: vans.length,
+        locationsCount: locations.length,
+        depotSelected: depotSelected,
+        allLocationsSelected: allLocationsSelected,
+        locationStatuses: Array.from(locationInputs).map(input => ({
+            value: input.value,
+            selected: input.dataset.selected
+        }))
+    });
+    
     button.disabled = vans.length === 0 || 
                      locations.length === 0 || 
                      !depotSelected ||
                      !allLocationsSelected;
+                     
+    console.log('Button disabled:', button.disabled);
 }
 
 async function calculateRoutes() {
