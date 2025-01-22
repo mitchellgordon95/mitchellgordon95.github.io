@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Van Route Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC80y4budmPDZ0_T87VERP6-GdAs718384&libraries=places"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Van Route Planner</h1>
+        
+        <section id="depot-section">
+            <h2>Starting Location (Depot)</h2>
+            <input type="text" 
+                   id="depot-input"
+                   class="location-input"
+                   placeholder="Enter depot address">
+        </section>
+
+        <div class="flex-container">
+            <section id="van-section">
+                <h2>Vans</h2>
+                <div id="van-list"></div>
+                <button onclick="addVan()">Add Van</button>
+            </section>
+
+            <section id="location-section">
+                <h2>Destinations</h2>
+                <div id="location-list"></div>
+                <button onclick="addLocation()">Add Location</button>
+            </section>
+        </div>
+
+        <div style="display: flex; align-items: center;">
+            <button id="calculate" onclick="calculateRoutes()" disabled>Calculate Routes</button>
+            <div class="tooltip-container">
+                <span class="info-icon">ⓘ</span>
+                <div class="tooltip">
+                    Using the Clarke and Wright savings algorithm for vehicle routing.
+                    Results are approximate and appropriate discretion should be applied.
+                    <a href="https://aswani.ieor.berkeley.edu/teaching/FA15/151/lecture_notes/ieor151_lec18.pdf" 
+                       target="_blank">Learn more</a>
+                </div>
+            </div>
+            <button onclick="clearData()" class="clear-button">Clear Data</button>
+        </div>
+        <div class="loading-overlay">
+            <div style="text-align: center;">
+                <div class="loading-spinner"></div>
+                <div class="loading-text">Calculating routes...</div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
