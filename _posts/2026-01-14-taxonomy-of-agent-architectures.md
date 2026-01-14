@@ -1,10 +1,8 @@
 ---
 layout: post
-title:  "A Taxonomy of Agent Architectures: From ReAct to Recursive Language Models"
+title:  "A Taxonomy of Agent Architectures: ReAct to Recursive Language Models"
 categories: tools
 ---
-
-# A Taxonomy of Agent Architectures: From ReAct to Recursive Language Models
 
 The recent publication of [Recursive Language Models](https://arxiv.org/abs/2512.24601) from MIT has sparked debate in the AI community. Some call it a breakthrough. Others dismiss it as "just agents with extra steps." 
 
