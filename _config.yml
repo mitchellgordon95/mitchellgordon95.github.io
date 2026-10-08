@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Mitchell A. Gordon
+author: Mitchell Gordon
 email: mitchell.gordon95@gmail.com 
 description: Thinking Thoughts
 baseurl: "" # the subpath of your site
@@ -32,8 +33,27 @@ plugins:
 header_pages:
   - about.md
   - index.md
+  - notes.md
   - papers.md
   - books.md
+
+# Notes (microblog): short untitled posts, separate page + separate feed.
+collections:
+  notes:
+    output: true
+    permalink: /notes/:title/
+defaults:
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: note
+feed:
+  collections:
+    notes:
+      path: "/notes.xml"
+include:
+  - .well-known
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

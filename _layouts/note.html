@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+<article class="note h-entry">
+  <header class="post-header">
+    <p class="post-meta">
+      <a class="u-url" href="{{ page.url | relative_url }}"><time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: date_format }}</time></a>
+      · <a href="{{ "/notes/" | relative_url }}">all notes</a>
+    </p>
+  </header>
+  <div class="e-content">
+    {{ content }}
+  </div>
+  <a class="p-author h-card" href="{{ "/" | absolute_url }}" hidden>{{ site.author }}</a>
+</article>
